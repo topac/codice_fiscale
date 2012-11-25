@@ -1,8 +1,14 @@
+require "rubygems"
+require "date"
 require "codice_fiscale/version"
 require "codice_fiscale/alphabet"
 
 module CodiceFiscale
   extend self
+
+  def month_codes
+    %w[A B C D E H L M P R S T]
+  end
 
   def intersects string_a, string_or_array_b
     letters_a = string_a.split ''
@@ -41,5 +47,12 @@ module CodiceFiscale
     code = first_three_consonants name
     code << first_three_vocals(name)
     truncate_and_right_pad_with_three_x code
+  end
+
+  def birthdate_part birthdate, gender
+    code = birthdate.year.to_s[2..3]
+    code << month_codes[birthdate.month-1]
+    day_part = gender == 'f' ? birthdate.day + 40 : birthdate.day
+    code << "#{day_part}".rjust(2, '0')
   end
 end

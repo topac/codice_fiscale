@@ -55,4 +55,29 @@ describe CodiceFiscale do
       end
     end
   end
+
+
+  describe '#birthdate_part' do
+    let(:birthdate) { Date.new 1987, 12, 3 }
+    let(:male) { 'm' }
+    let(:female) { 'f' }
+
+    it 'start with the last 2 digit of the year' do
+      subject.birthdate_part(birthdate, male).should start_with '87'
+    end
+
+    describe 'the 3rd character' do
+      it('is the month code') { subject.birthdate_part(birthdate, male)[2].should == 'T' }
+    end
+
+    describe 'the last 2 character' do
+      context 'gender is male' do
+        it('is the birth day') { subject.birthdate_part(birthdate, male)[3..5].should == '03' }
+      end
+
+      context 'gender is female' do
+        it('is the birth day + 40') { subject.birthdate_part(birthdate, female)[3..5].should == '43' }
+      end
+    end
+  end
 end
