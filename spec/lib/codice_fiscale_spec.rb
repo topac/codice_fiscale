@@ -1,6 +1,11 @@
 require 'spec_helper'
 
 describe CodiceFiscale do
+  def stub_csv_paths
+    subject.config.city_codes_csv_path = "#{fixtures_path}/city_codes.csv"
+    subject.config.country_codes_csv_path = "#{fixtures_path}/country_codes.csv"
+  end
+
   describe '#surname_part' do
     it 'takes the first 3 consonants' do
       subject.surname_part('molteni').should == 'MLT'
@@ -77,6 +82,65 @@ describe CodiceFiscale do
 
       context 'gender is female' do
         it('is the birth day + 40') { subject.birthdate_part(birthdate, female)[3..5].should == '43' }
+      end
+    end
+  end
+
+
+  describe '#city_code' do
+    before { stub_csv_paths }
+
+    context 'the city and the provice are founded' do
+      it 'return the associated code' do
+        subject.city_code('Abbadia Lariana', 'LC').should == 'A005'
+      end
+    end
+
+    context 'the city and the provice are not founded' do
+      it 'return nil' do
+        subject.city_code('Winterfell', 'SO').should be_nil
+      end
+    end
+
+    context 'a block is configured to be called' do
+      before { subject.config.city_code { "foo" } }
+
+      it 'return the result of the block execution' do
+        subject.city_code('Lecco', 'LC').should == 'foo'
+      end
+    end
+  end
+
+
+  describe '#country_code' do
+    before { stub_csv_paths }
+
+    context 'the country is founded' do
+      it 'return the associated code' do
+        subject.country_code('francia').should == 'Z110'
+      end
+    end
+
+    context 'a block is configured to be called' do
+      before { subject.config.country_code { "bar" } }
+
+      it 'return the result of the block execution' do
+        subject.country_code('francia').should == 'bar'
+      end
+    end
+  end
+
+
+  describe '#birthplace_part' do
+    before do
+      stub_csv_paths
+      subject.config.country_code = nil
+      subject.config.city_code = nil
+    end
+
+    context 'the country is Italy' do
+      it 'return the city_code' do
+        subject.birthplace_part('Italia', 'Abbadia Lariana', 'LC').should == 'A005'
       end
     end
   end

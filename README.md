@@ -4,6 +4,8 @@ A ruby gem to support the calculation of the italian fiscal code ("cofice fiscal
 
 Read more here: http://en.wikipedia.org/wiki/Italian_fiscal_code_card
 
+City codes ("codice catastale") can be founded here: http://www.agenziaterritorio.it/?id=721
+
 
 ## Installation
 
@@ -15,9 +17,6 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install codice_fiscale
 
 ## Usage
 
