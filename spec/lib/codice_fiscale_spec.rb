@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe CodiceFiscale do
-  def stub_csv_paths
+  before do
     subject.config.city_codes_csv_path = "#{fixtures_path}/city_codes.csv"
     subject.config.country_codes_csv_path = "#{fixtures_path}/country_codes.csv"
   end
@@ -72,7 +72,9 @@ describe CodiceFiscale do
     end
 
     describe 'the 3rd character' do
-      it('is the month code') { subject.birthdate_part(birthdate, male)[2].should == 'T' }
+      before { subject::Codes.stub(:month_letter).and_return('X') }
+
+      it('is the month code') { subject.birthdate_part(birthdate, male)[2].should == 'X' }
     end
 
     describe 'the last 2 character' do
@@ -88,8 +90,6 @@ describe CodiceFiscale do
 
 
   describe '#city_code' do
-    before { stub_csv_paths }
-
     context 'the city and the provice are founded' do
       it 'return the associated code' do
         subject.city_code('Abbadia Lariana', 'LC').should == 'A005'
@@ -113,8 +113,6 @@ describe CodiceFiscale do
 
 
   describe '#country_code' do
-    before { stub_csv_paths }
-
     context 'the country is founded' do
       it 'return the associated code' do
         subject.country_code('francia').should == 'Z110'
@@ -133,7 +131,6 @@ describe CodiceFiscale do
 
   describe '#birthplace_part' do
     before do
-      stub_csv_paths
       subject.config.country_code = nil
       subject.config.city_code = nil
     end
@@ -147,9 +144,31 @@ describe CodiceFiscale do
 
 
   describe '#check_character' do
-    it 'work' do
-      subject.check_character('').should == 'A'
+    it 'call #Codes.check_character and return its result' do
+      subject::Codes.should_receive :check_character
+      subject.check_character 'ABC'
+    end
+
+    it 'call #Codes.odd_character for odd positioned chars' do
+      subject::Codes.should_receive(:odd_character).exactly(2).and_return 1
+      subject.check_character 'ABC'
+    end
+
+    it 'call #Codes.even_character for odd positioned chars' do
+      subject::Codes.should_receive(:even_character).exactly(1).and_return 1
+      subject.check_character 'ABC'
+    end
+
+    it 'works!' do
       subject.check_character('RSSMRA87E02E507').should == 'C'
+    end
+  end
+
+
+  describe '#calculate' do
+    it 'works!' do
+      params = ['mario', 'rossi', :male, Date.new(1987, 5, 02), 'italia', 'lc', 'Abbadia Lariana']
+      subject.calculate(*params).should == 'MRARSS87E02A005H'
     end
   end
 end

@@ -9,6 +9,14 @@ require 'codice_fiscale/configuration'
 module CodiceFiscale
   extend self
 
+  def calculate name, surname, gender, birthdate, country_name, province_code, city_name
+    code = birthplace_part country_name, city_name, province_code
+    return nil unless code
+    code = name_part(name) + surname_part(surname) + birthdate_part(birthdate, gender) + code
+    code + check_character(code)
+  end
+
+
   # Methods to generate each part of the code
 
   def surname_part surname
@@ -30,7 +38,7 @@ module CodiceFiscale
   def birthdate_part birthdate, gender
     code = birthdate.year.to_s[2..3]
     code << Codes.month_letter(birthdate.month-1)
-    day_part = gender == 'f' ? birthdate.day + 40 : birthdate.day
+    day_part = gender.to_s.downcase[0] == 'f' ? birthdate.day + 40 : birthdate.day
     code << "#{day_part}".rjust(2, '0')
   end
 
@@ -61,9 +69,9 @@ module CodiceFiscale
   end
 
 
-
   # Helper methods
 
+  # Intersect two strings or a string and an array of characters.
   def intersects string_a, string_or_array_b
     letters_a = string_a.split ''
     letters_b = string_or_array_b.respond_to?(:split) ? string_or_array_b.split('') : string_or_array_b
