@@ -144,4 +144,12 @@ describe CodiceFiscale do
       end
     end
   end
+
+
+  describe '#check_character' do
+    it 'work' do
+      subject.check_character('').should == 'A'
+      subject.check_character('RSSMRA87E02E507').should == 'C'
+    end
+  end
 end

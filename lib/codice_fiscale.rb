@@ -9,7 +9,6 @@ require 'codice_fiscale/configuration'
 module CodiceFiscale
   extend self
 
-
   # Methods to generate each part of the code
 
   def surname_part surname
@@ -53,7 +52,12 @@ module CodiceFiscale
     end
   end
 
-  def check_character
+  def check_character partial_fiscal_code
+    numeric_value = 0
+    partial_fiscal_code.split('').each_with_index do |chr, index|
+      numeric_value += ((index+1) % 2 == 0) ? Codes.even_character(chr) : Codes.odd_character(chr)
+    end
+    Codes.check_character numeric_value % 26
   end
 
 
