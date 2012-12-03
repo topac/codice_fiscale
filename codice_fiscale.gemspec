@@ -4,8 +4,8 @@ require File.expand_path('../lib/codice_fiscale/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Daniele Molteni"]
   gem.email         = ["dani.m.mobile@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Calculate the italian fiscal code}
+  gem.summary       = %q{Calculate the italian fiscal code}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
