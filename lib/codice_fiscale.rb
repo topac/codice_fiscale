@@ -12,7 +12,8 @@ module CodiceFiscale
   def calculate name, surname, gender, birthdate, country_name, province_code, city_name
     code = birthplace_part country_name, city_name, province_code
     return nil unless code
-    code = name_part(name) + surname_part(surname) + birthdate_part(birthdate, gender) + code
+    code = surname_part(surname) + name_part(name) + birthdate_part(birthdate, gender) + code
+    puts code
     code + check_character(code)
   end
 
@@ -37,7 +38,7 @@ module CodiceFiscale
 
   def birthdate_part birthdate, gender
     code = birthdate.year.to_s[2..3]
-    code << Codes.month_letter(birthdate.month-1)
+    code << Codes.month_letter(birthdate.month)
     day_part = gender.to_s.downcase[0] == 'f' ? birthdate.day + 40 : birthdate.day
     code << "#{day_part}".rjust(2, '0')
   end
