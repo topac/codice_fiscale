@@ -160,15 +160,15 @@ describe CodiceFiscale do
     end
 
     it 'works!' do
-      subject.check_character('RSSMRA87E02E507').should == 'C'
+      subject.check_character('RSSMRA87A01A005').should == 'V'
     end
   end
 
 
   describe '#calculate' do
     it 'works!' do
-      params = ['mario', 'rossi', :male, Date.new(1987, 5, 02), 'italia', 'lc', 'Abbadia Lariana']
-      subject.calculate(*params).should == 'MRARSS87E02A005H'
+      params = ['mario', 'rossi', :male, Date.new(1987, 1, 1), 'italia', 'lc', 'Abbadia Lariana']
+      subject.calculate(*params).should == 'RSSMRA87A01A005V'
     end
   end
 end

@@ -8,7 +8,7 @@ module CodiceFiscale
 
     def month_letter month_number
       decode = %w[A B C D E H L M P R S T]
-      month_number < 0 ? nil : decode[month_number]
+      month_number <= 0 ? nil : decode[month_number-1]
     end
 
     def city city_name, province_code
