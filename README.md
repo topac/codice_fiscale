@@ -3,20 +3,17 @@
 A ruby gem to support the calculation of the italian fiscal code (*Cofice fiscale*), 
 that is an ID assigned to each italian citizen by the *Agenzia delle entrate*.
 
-To calculate the fiscal code of an italian citizen you need the following information: name, surname, 
-gender, birthdate and the birthplace (that is composed by the country's name, province's code, city's name).
-
-The province's code and the city's name are mandatory only if the birthplace's country is *Italia*.
-
-Read more on [wikipedia](http://en.wikipedia.org/wiki/Italian_fiscal_code_card).
+To calculate the fiscal code you need the following information: name, surname, 
+gender, birthdate and the birthplace. Read more on [wikipedia](http://en.wikipedia.org/wiki/Italian_fiscal_code_card).
 
 ## Usage
 
 ```ruby
   require 'codice_fiscale'
 
-  cod = CodiceFiscale.calculate 'mario', 'rossi', :male, Date.new(1987, 1, 1), 'italia', 'lc', 'Abbadia Lariana'
-  puts code # RSSMRA87A01A005V
+  CodiceFiscale.calculate 'mario', 'rossi', :male, Date.new(1987, 1, 1), 'italia', 'lc', 'Abbadia Lariana'
+
+  # RSSMRA87A01A005V
 ```
 
 ## City codes (*Codici catastali*)
@@ -27,16 +24,19 @@ For example, an italian citizen born in France:
 ```ruby
   CodiceFiscale.calculate 'mario', 'rossi', :male, Date.new(1987, 1, 1), 'francia'
 ```
-If a person was born in Italy you have to specify the *code* of the province and the name of the city. These information are actually contained in a CSV file downloadad from [agenziaterritorio](http://www.agenziaterritorio.it/?id=721).
+If a person was born in Italy you have to specify the *code* of the province and the name of the city. These informations are actually contained in an XLS 
+document downloaded from [agenziaterritorio.it](http://www.agenziaterritorio.it/?id=721), converted to CSV and shipped with this gem.
 
 **But what if you have your own table with all those codes?**
 
-In this case, you can add a custom block to fetch the codes from your tables/files:
+In this case, you can add a custom block that fetches the codes from your tables/files:
 
 
 *config/initializers/codice_fiscale_initializer.rb*:
 
 ```ruby
+  # Fetching the codes using ActiveRecord:
+
   CodiceFiscale.config.country_code do |country_name|
     Country.find_by_name(country_name).code
   end
@@ -56,6 +56,11 @@ And then execute:
 
     $ bundle
 
+## Testing
+
+I'm using RSpec + guard (+ growl for notifications)
+
+`bundle exec guard`
 
 ## Contributing
 
@@ -64,3 +69,4 @@ And then execute:
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
