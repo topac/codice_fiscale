@@ -166,9 +166,18 @@ describe CodiceFiscale do
 
 
   describe '#calculate' do
-    it 'works!' do
-      params = ['mario', 'rossi', :male, Date.new(1987, 1, 1), 'italia', 'lc', 'Abbadia Lariana']
-      subject.calculate(*params).should == 'RSSMRA87A01A005V'
+    context 'italian citizen' do
+      it 'return the expected code' do
+        params = ['mario', 'rossi', :male, Date.new(1987, 1, 1), 'italia', 'lc', 'Abbadia Lariana']
+        subject.calculate(*params).should == 'RSSMRA87A01A005V'
+      end
+    end
+
+    context 'return the expected code' do
+      it 'work' do
+        params = ['mario', 'rossi', :male, Date.new(1987, 1, 1), 'Albania']
+        subject.calculate(*params).should == 'RSSMRA87A01Z100H'
+      end
     end
   end
 end
