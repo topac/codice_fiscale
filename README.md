@@ -11,7 +11,7 @@ gender, birthdate and the birthplace. Read more on [wikipedia](http://en.wikiped
 ```ruby
   require 'codice_fiscale'
 
-  CodiceFiscale.calculate 'mario', 'rossi', :male, Date.new(1987, 1, 28), 'italia', 'lc', 'Abbadia Lariana'
+  CodiceFiscale.calculate 'mario', 'rossi', :male, Date.new(1987, 1, 1), 'italia', 'lc', 'Abbadia Lariana'
 
   # RSSMRA87A01A005V
 ```
