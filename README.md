@@ -1,7 +1,7 @@
 # Codice fiscale
 
-A ruby gem to support the calculation of the italian fiscal code (*Cofice fiscale*), 
-that is an ID assigned to each italian citizen by the *Agenzia delle entrate*.
+A ruby gem to support the calculation of the italian fiscal code ("Cofice fiscale"), 
+that is an ID assigned to each italian citizen by the "Agenzia delle entrate".
 
 To calculate the fiscal code you need the following information: name, surname, 
 gender, birthdate and the birthplace. Read more on [wikipedia](http://en.wikipedia.org/wiki/Italian_fiscal_code_card).
@@ -11,12 +11,12 @@ gender, birthdate and the birthplace. Read more on [wikipedia](http://en.wikiped
 ```ruby
   require 'codice_fiscale'
 
-  CodiceFiscale.calculate 'mario', 'rossi', :male, Date.new(1987, 1, 1), 'italia', 'lc', 'Abbadia Lariana'
+  CodiceFiscale.calculate 'mario', 'rossi', :male, Date.new(1987, 1, 28), 'italia', 'lc', 'Abbadia Lariana'
 
   # RSSMRA87A01A005V
 ```
 
-## City codes (*Codici catastali*)
+## City codes (Codici catastali)
 As explained above, one of the information required to calculate the fiscal code is the birthplace.  
 If a person was born outside Italy, only the italian name of the county is required.  
 For example, an italian citizen born in France:
@@ -24,7 +24,7 @@ For example, an italian citizen born in France:
 ```ruby
   CodiceFiscale.calculate 'mario', 'rossi', :male, Date.new(1987, 1, 1), 'francia'
 ```
-If a person was born in Italy you have to specify the *code* of the province and the name of the city. These informations are actually contained in an XLS 
+If a person was born in Italy you have to specify the *code* of the province and the *name* of the city. These informations are actually contained in an XLS 
 document downloaded from [agenziaterritorio.it](http://www.agenziaterritorio.it/?id=721), converted to CSV and shipped with this gem.
 
 **But what if you have your own table with all those codes?**
@@ -48,6 +48,8 @@ In this case, you can add a custom block that fetches the codes from your tables
 
 ## Installation
 
+I'm currently supporting only **ruby 1.9+**
+
 Add this line to your application's Gemfile:
 
     gem 'codice_fiscale'
@@ -60,7 +62,7 @@ And then execute:
 
 I'm using RSpec + guard (+ growl for notifications)
 
-`bundle exec guard`
+    $ bundle exec guard
 
 ## Contributing
 
