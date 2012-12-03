@@ -9,7 +9,7 @@ require 'codice_fiscale/configuration'
 module CodiceFiscale
   extend self
 
-  def calculate name, surname, gender, birthdate, country_name, province_code, city_name
+  def calculate name, surname, gender, birthdate, country_name, province_code = nil, city_name = nil
     code = birthplace_part country_name, city_name, province_code
     return nil unless code
     code = surname_part(surname) + name_part(name) + birthdate_part(birthdate, gender) + code
@@ -57,7 +57,7 @@ module CodiceFiscale
     if %w[italia italy].include?(country_name.downcase.strip)
       city_code city_name, province_code
     else
-      country_code country_code
+      country_code country_name
     end
   end
 
