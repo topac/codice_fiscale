@@ -6,7 +6,8 @@ Gem::Specification.new do |gem|
   gem.email         = ["topac@users.noreply.github.com"]
   gem.description   = %q{Calculate the italian fiscal code}
   gem.summary       = %q{Calculate the italian fiscal code}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/topac/codice_fiscale"
+  gem.platform      = Gem::Platform::RUBY
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
