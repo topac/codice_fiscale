@@ -2,6 +2,8 @@ module CodiceFiscale
   module Codes
     extend self
 
+    ITALY_NAMES = %w[italy italia]
+
     def config
       CodiceFiscale.config
     end
@@ -44,6 +46,10 @@ module CodiceFiscale
     def check_character number
       decode = %w[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]
       decode[number]
+    end
+
+    def italy? country_name
+      ITALY_NAMES.include? country_name.strip.downcase
     end
   end
 end

@@ -53,7 +53,7 @@ module CodiceFiscale
   end
 
   def birthplace_part country_name, city_name = nil, province_code = nil
-    if %w[italia italy].include?(country_name.downcase.strip)
+    if Codes.italy? country_name
       city_code city_name, province_code
     else
       country_code country_name
