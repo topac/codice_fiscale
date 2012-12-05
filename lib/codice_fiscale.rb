@@ -13,7 +13,6 @@ module CodiceFiscale
     code = birthplace_part country_name, city_name, province_code
     return nil unless code
     code = surname_part(surname) + name_part(name) + birthdate_part(birthdate, gender) + code
-    puts code
     code + check_character(code)
   end
 
