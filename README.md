@@ -11,7 +11,7 @@ gender, birthdate and the birthplace. Read more on [wikipedia](http://en.wikiped
 ```ruby
   require 'codice_fiscale'
 
-  CodiceFiscale.calculate 'mario', 'rossi', :male, Date.new(1987, 1, 1), 'italia', 'lc', 'Abbadia Lariana'
+  CodiceFiscale.calculate :name => 'Mario', :surname => 'Rossi', :gender => :male, :birthdate => Date.new(1987, 1, 1), :province_code => 'LC', :city_name => 'Abbadia Lariana'
 
   # RSSMRA87A01A005V
 ```
@@ -22,8 +22,9 @@ If a person was born outside Italy, only the italian name of the county is requi
 For example, an italian citizen born in France:
 
 ```ruby
-  CodiceFiscale.calculate 'mario', 'rossi', :male, Date.new(1987, 1, 1), 'francia'
+  CodiceFiscale.calculate :name => 'Mario', :surname => 'Rossi', :gender => :male, :birthdate => Date.new(1987, 1, 1), :country_name => 'Francia'
 ```
+
 If a person was born in Italy you have to specify the *code* of the province and the *name* of the city. These informations are actually contained in an XLS 
 document downloaded from [agenziaterritorio.it](http://www.agenziaterritorio.it/?id=721), converted to CSV and shipped with this gem.
 
