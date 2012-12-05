@@ -9,11 +9,22 @@ require 'codice_fiscale/configuration'
 module CodiceFiscale
   extend self
 
-  def calculate name, surname, gender, birthdate, country_name, province_code = nil, city_name = nil
-    code = birthplace_part country_name, city_name, province_code
-    return nil unless code
-    code = surname_part(surname) + name_part(name) + birthdate_part(birthdate, gender) + code
+  def calculate params
+    validate_calculate_params params
+    code = birthplace_part (params[:country_name] || Codes::ITALY), params[:city_name], params[:province_code]
+    raise "Missing city/country code. Mispelled?" unless code
+    code = surname_part(params[:surname]) + name_part(params[:name]) + birthdate_part(params[:birthdate], params[:gender]) + code
     code + check_character(code)
+  end
+
+  def validate_calculate_params params
+    [:name, :surname, :gender, :birthdate].each do |param_name|
+      raise "Missing #{param_name} parameter" unless params[param_name]
+    end
+    raise "Invalid birthdate: #{params[:birthdate]}" unless params[:birthdate].respond_to? :year
+    unless Codes::GENDERS.include? params[:gender]
+      raise "Invalid gender. Possible values are #{Codes::GENDERS}"
+    end
   end
 
 

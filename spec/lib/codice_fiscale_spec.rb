@@ -168,15 +168,47 @@ describe CodiceFiscale do
   describe '#calculate' do
     context 'italian citizen' do
       it 'return the expected code' do
-        params = ['mario', 'rossi', :male, Date.new(1987, 1, 1), 'italia', 'lc', 'Abbadia Lariana']
-        subject.calculate(*params).should == 'RSSMRA87A01A005V'
+        params = {:name => 'mario', :surname => 'rossi', :gender => :male, :birthdate => Date.new(1987, 1, 1),
+                  :province_code => 'lc', :city_name => 'Abbadia Lariana'}
+        subject.calculate(params).should == 'RSSMRA87A01A005V'
       end
     end
 
     context 'return the expected code' do
       it 'work' do
-        params = ['mario', 'rossi', :male, Date.new(1987, 1, 1), 'Albania']
-        subject.calculate(*params).should == 'RSSMRA87A01Z100H'
+        params = {:name => 'mario', :surname => 'rossi', :gender => :male, :birthdate => Date.new(1987, 1, 1), :country_name => 'Albania'}
+        subject.calculate(params).should == 'RSSMRA87A01Z100H'
+      end
+    end
+  end
+
+  describe '#validate_calculate_params' do
+    let(:mandatory_params) { {:name => 'mario', :surname => 'rossi', :gender => :male, :birthdate => Date.new(1987, 1, 1)} }
+
+    context 'All mandatory params are correct' do
+      it 'do not raise any arror' do
+        lambda { subject.validate_calculate_params(mandatory_params) }.should_not raise_error
+      end
+    end
+
+    context 'A mandatory parameter is missing' do
+      it 'raise an error' do
+        without_name = mandatory_params.reject {|p| p == :name }
+        lambda { subject.validate_calculate_params(without_name) }.should raise_error
+      end
+    end
+
+    context 'Gender is invalid' do
+      it 'raise an error' do
+        params = mandatory_params.merge :gender => :lol
+        lambda { subject.validate_calculate_params(params) }.should raise_error
+      end
+    end
+
+    context 'Birthdate is invalid' do
+      it 'raise an error' do
+        params = mandatory_params.merge :birthdate => '2000/01/01'
+        lambda { subject.validate_calculate_params(params) }.should raise_error
       end
     end
   end
