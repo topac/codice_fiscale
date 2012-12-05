@@ -50,9 +50,11 @@ In this case, you can add a custom block that fetches the codes from your tables
 
 I'm currently supporting only **ruby 1.9+**
 
+**Note:** The gem name on rubygems.org is "codice-fiscale" not "codice_fiscale"
+
 Add this line to your application's Gemfile:
 
-    gem 'codice_fiscale'
+    gem 'codice-fiscale'
 
 And then execute:
 
