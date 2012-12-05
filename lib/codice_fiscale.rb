@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'date'
 require 'csv'
+require 'active_support/core_ext/object/blank'
 require 'codice_fiscale/version'
 require 'codice_fiscale/alphabet'
 require 'codice_fiscale/codes'
@@ -19,11 +20,11 @@ module CodiceFiscale
 
   def validate_calculate_params params
     [:name, :surname, :gender, :birthdate].each do |param_name|
-      raise "Missing #{param_name} parameter" unless params[param_name]
+      raise ArgumentError.new("Missing #{param_name} parameter") if params[param_name].blank?
     end
-    raise "Invalid birthdate: #{params[:birthdate]}" unless params[:birthdate].respond_to? :year
+    raise ArgumentError.new("Invalid birthdate: #{params[:birthdate]}") unless params[:birthdate].respond_to? :year
     unless Codes::GENDERS.include? params[:gender]
-      raise "Invalid gender. Possible values are #{Codes::GENDERS}"
+      raise ArgumentError.new("Invalid gender. Possible values are #{Codes::GENDERS}")
     end
   end
 
