@@ -22,7 +22,7 @@ module CodiceFiscale
   def surname_part surname
     surname.upcase!
     code = first_three_consonants surname
-    code << first_three_vocals(surname)
+    code << first_three_vowels(surname)
     truncate_and_right_pad_with_three_x code
   end
 
@@ -31,7 +31,7 @@ module CodiceFiscale
     consonants_of_name = consonants name
     return consonants_of_name[0]+consonants_of_name[2..3] if consonants_of_name.size >= 4
     code = first_three_consonants name
-    code << first_three_vocals(name)
+    code << first_three_vowels(name)
     truncate_and_right_pad_with_three_x code
   end
 
@@ -87,8 +87,8 @@ module CodiceFiscale
     intersects(string, Alphabet.consonants)[0..2]
   end
 
-  def first_three_vocals string
-    intersects(string, Alphabet.vocals)[0..2]
+  def first_three_vowels string
+    intersects(string, Alphabet.vowels)[0..2]
   end
 
   def truncate_and_right_pad_with_three_x string
