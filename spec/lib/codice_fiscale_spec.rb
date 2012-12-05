@@ -17,7 +17,7 @@ describe CodiceFiscale do
     end
 
     context 'surname has only 1 consonant' do
-      it 'put the vocals after the consonants' do
+      it 'put the vowels after the consonants' do
         subject.surname_part('oof').should == 'FOO'
       end
     end
@@ -49,7 +49,7 @@ describe CodiceFiscale do
     end
 
     context 'name has 2 consonants' do
-      it 'put the vocals after the consonants' do
+      it 'put the vowels after the consonants' do
         subject.name_part('bar').should == 'BRA'
       end
     end
