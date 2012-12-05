@@ -21,4 +21,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rb-fsevent', '~> 0.9.1'
   # The growl app must be separately downloaded and installed
   gem.add_development_dependency 'growl'
+
+  gem.add_dependency 'active_support'
 end
