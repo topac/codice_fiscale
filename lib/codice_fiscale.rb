@@ -8,6 +8,7 @@ require 'codice_fiscale/alphabet'
 require 'codice_fiscale/codes'
 require 'codice_fiscale/configuration'
 require 'codice_fiscale/string_helper'
+require 'codice_fiscale/fiscal_code'
 require 'codice_fiscale/italian_citizen'
 
 module CodiceFiscale
@@ -31,7 +32,6 @@ module CodiceFiscale
       raise ArgumentError.new("Invalid gender. Possible values are #{Codes::GENDERS}")
     end
   end
-
 
   # Methods to generate each part of the code
 
