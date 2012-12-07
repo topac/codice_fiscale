@@ -1,5 +1,3 @@
-require 'codice_fiscale/codes'
-
 module CodiceFiscale
   class ItalianCitizen
     include ActiveModel::Validations
