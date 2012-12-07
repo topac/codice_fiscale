@@ -29,4 +29,42 @@ describe CodiceFiscale::FiscalCode do
       end
     end
   end
+
+  describe '#name_part' do
+    it 'is 3 chrs long' do
+      fiscal_code.name_part.size.should == 3
+    end
+
+    context 'when name has 4 or more consonants' do
+      before { fiscal_code.citizen.name = 'danielino' }
+
+      it 'takes the 1st the 3rd and the 4th' do
+        fiscal_code.name_part.should == 'DLN'
+      end
+    end
+
+    context "when name has 3 or less consonants" do
+      before { fiscal_code.citizen.name = 'daniele' }
+
+      it 'takes the first 3 consonants' do
+        fiscal_code.name_part.should == 'DNL'
+      end
+    end
+
+    context 'when name has 2 consonants' do
+      before { fiscal_code.citizen.name = 'bar' }
+
+      it 'puts the vowels after the consonants' do
+        fiscal_code.name_part.should == 'BRA'
+      end
+    end
+
+    context 'name is less than 3 chrs long' do
+      before { fiscal_code.citizen.name = 'd' }
+
+      it 'pad with the "X" character' do
+        fiscal_code.name_part.should == 'DXX'
+      end
+    end
+  end
 end

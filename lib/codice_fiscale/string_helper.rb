@@ -26,5 +26,12 @@ module CodiceFiscale
     def truncate_and_right_pad_with_three_x string
       string[0..2].ljust 3, 'X'
     end
+
+    def first_three_consonants_than_vowels string
+      string.upcase!
+      code = first_three_consonants string
+      code << first_three_vowels(string)
+      truncate_and_right_pad_with_three_x code
+    end
   end
 end
