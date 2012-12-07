@@ -10,10 +10,16 @@ module CodiceFiscale
     end
 
     def surname_part
-      surname = citizen.surname.upcase
-      code = first_three_consonants surname
-      code << first_three_vowels(surname)
-      truncate_and_right_pad_with_three_x code
+      first_three_consonants_than_vowels citizen.surname
+    end
+
+    def name_part
+      return "#{consonants_of_name[0]}#{consonants_of_name[2..3]}" if consonants_of_name.size >= 4
+      first_three_consonants_than_vowels citizen.name
+    end
+
+    def consonants_of_name
+      consonants citizen.name.upcase
     end
   end
 end
