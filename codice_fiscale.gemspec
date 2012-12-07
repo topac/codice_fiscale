@@ -23,4 +23,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'growl'
 
   gem.add_dependency 'active_support'
+  gem.add_dependency 'activemodel'
 end
