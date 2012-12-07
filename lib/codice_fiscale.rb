@@ -1,12 +1,14 @@
 require 'rubygems'
 require 'date'
 require 'csv'
+require 'active_model'
 require 'active_support/core_ext/object/blank'
 require 'codice_fiscale/version'
 require 'codice_fiscale/alphabet'
 require 'codice_fiscale/codes'
 require 'codice_fiscale/configuration'
 require 'codice_fiscale/string_helper'
+require 'codice_fiscale/italian_citizen'
 
 module CodiceFiscale
   include StringHelper
