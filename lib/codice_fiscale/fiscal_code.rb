@@ -1,6 +1,7 @@
 module CodiceFiscale
   class FiscalCode
     include Helpers
+    include Configurable
 
     attr_accessor :italian_citizen
     alias :citizen :italian_citizen

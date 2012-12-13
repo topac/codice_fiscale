@@ -30,6 +30,17 @@ module CodiceFiscale
   end
 
 
+  module Configurable
+    def self.config
+      CodiceFiscale.config
+    end
+
+    def config
+      Configurable.config
+    end
+  end
+
+
   def self.config
     @config ||= Configuration.new
   end
