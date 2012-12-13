@@ -30,7 +30,7 @@ module CodiceFiscale
   end
 
 
-  def config
+  def self.config
     @config ||= Configuration.new
   end
 end

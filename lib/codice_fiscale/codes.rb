@@ -48,7 +48,7 @@ module CodiceFiscale
       EVEN_CODES[character.upcase]
     end
 
-    def check_character number
+    def control_character number
       Alphabet.letters[number]
     end
 
