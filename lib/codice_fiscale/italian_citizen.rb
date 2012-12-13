@@ -32,6 +32,14 @@ module CodiceFiscale
       Codes.italy? country_name
     end
 
+    def female?
+      gender == :female
+    end
+
+    def fiscal_code
+      FiscalCode.new(self).calculate
+    end
+
     # This method exists to support ActiveModel::Validations integration
     def read_attribute_for_validation key
       @attributes[key]

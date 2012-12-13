@@ -17,6 +17,7 @@ describe CodiceFiscale::ItalianCitizen do
     end
   end
 
+
   describe '#validations' do
     describe 'when all attributes are valid' do
       it 'is valid' do
