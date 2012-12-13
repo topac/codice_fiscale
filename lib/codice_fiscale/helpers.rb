@@ -29,9 +29,5 @@ module CodiceFiscale
       code << first_three_vowels(string)
       truncate_and_right_pad_with_three_x code
     end
-
-    def config
-      CodiceFiscale.config
-    end
   end
 end

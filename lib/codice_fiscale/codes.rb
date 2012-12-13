@@ -1,5 +1,6 @@
 module CodiceFiscale
   module Codes
+    include Configurable
     extend self
 
     ITALY = 'Italia'
@@ -16,17 +17,13 @@ module CodiceFiscale
 
     GENDERS = [:male, :female]
 
-    def config
-      CodiceFiscale.config
-    end
-
     def month_letter month_number
       month_number <= 0 ? nil : MONTH_CODES[month_number-1]
     end
 
     def city city_name, province_code
       CSV.foreach config.city_codes_csv_path do |row|
-        if city_name.casecmp(row[3].strip) == 0 and province_code.casecmp(row[2].strip) == 0
+        if city_name.casecmp(row[3].strip).zero? and province_code.casecmp(row[2].strip).zero?
           return row[0].strip.upcase
         end
       end
@@ -35,7 +32,7 @@ module CodiceFiscale
 
     def country country_name
       CSV.foreach config.country_codes_csv_path do |row|
-        return row[3].strip.upcase if country_name.casecmp(row[2].strip) == 0
+        return row[3].strip.upcase if country_name.casecmp(row[2].strip).zero?
       end
       nil
     end
@@ -53,7 +50,7 @@ module CodiceFiscale
     end
 
     def italy? country_name
-      ITALY.casecmp(country_name.strip) == 0
+      ITALY.casecmp(country_name.strip).zero?
     end
   end
 end
