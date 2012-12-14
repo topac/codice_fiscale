@@ -13,9 +13,7 @@ module CodiceFiscale
     end
 
     def calculate
-      code = birthplace_part
-      raise "Cannot find a valid code for #{[country_name, city_name, province_code].compact.join ', '}" unless code
-      code = surname_part + name_part + birthdate_part + code
+      code = surname_part + name_part + birthdate_part + birthplace_part
       code + control_character(code)
     end
 
@@ -31,12 +29,18 @@ module CodiceFiscale
     def birthdate_part
       code = birthdate.year.to_s[2..3]
       code << Codes.month_letter(birthdate.month)
-      day_part = citizen.female? ? birthdate.day + 40 : birthdate.day
-      code << "#{day_part}".rjust(2, '0')
+      code << day_part
+    end
+
+    def day_part
+      number = citizen.female? ? birthdate.day + 40 : birthdate.day
+      "#{number}".rjust(2, '0')
     end
 
     def birthplace_part
-      citizen.born_in_italy? && city_code || country_code
+      code = citizen.born_in_italy? && Codes.city(city_name, province_code) || Codes.country(country_name)
+      raise "Cannot find a valid code for #{[country_name, city_name, province_code].compact.join ', '}" unless code
+      code
     end
 
     def control_character partial_fiscal_code
@@ -49,16 +53,6 @@ module CodiceFiscale
 
     def consonants_of_name
       consonants name.upcase
-    end
-
-    def city_code
-      return config.city_code.call(city_name, province_code) if config.city_code
-      Codes.city city_name, province_code
-    end
-
-    def country_code
-      return config.country_code.call(country_name) if config.country_code
-      Codes.country country_name
     end
   end
 end
