@@ -39,9 +39,4 @@ module CodiceFiscale
       Configurable.config
     end
   end
-
-
-  def self.config
-    @config ||= Configuration.new
-  end
 end
