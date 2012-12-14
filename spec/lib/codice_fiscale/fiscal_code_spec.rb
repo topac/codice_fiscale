@@ -95,70 +95,53 @@ describe CodiceFiscale::FiscalCode do
         it('is the birth day + 40') { fiscal_code.birthdate_part[3..5].should == '43' }
       end
     end
+  end
 
+  describe '#birthplace_part' do
+    context 'when the country is Italy' do
+      before { fiscal_code.citizen.country_name = 'Italia' }
 
-    describe '#city_code' do
-      context 'the city and the provice are founded' do
-        it 'returns the associated code' do
-          fiscal_code.city_code.should == 'G009'
+      context 'when codes are fetched using a proc' do
+        before { fiscal_code.config.city_code { 'Winterfell' } }
+
+        it 'returns the result of the city-block execution' do
+          fiscal_code.birthplace_part.should == 'Winterfell'
         end
       end
 
-      context 'the city and the provice are not founded' do
-        before { fiscal_code.citizen.city_name = 'Winterfell' }
+      context 'when codes are fetched using csv' do
+        before { CodiceFiscale::Codes.stub!(:city).and_return('hello') }
 
-        it 'returns nil' do
-          fiscal_code.city_code.should be_nil
-        end
-      end
-
-      context 'a block is configured to be called' do
-        before { fiscal_code.config.city_code { "foo" } }
-
-        it 'returns the result of the block execution' do
-          fiscal_code.city_code.should == 'foo'
+        it 'returns the city code' do
+          fiscal_code.birthplace_part.should == 'hello'
         end
       end
     end
 
+    context 'when the country is not Italy' do
+      before { fiscal_code.citizen.country_name = 'Francia' }
 
-    describe '#country_code' do
-      context 'the country is Italy' do
-        it 'returns nil' do
-          fiscal_code.country_code.should be_nil
+      context 'when codes are fetched using a proc' do
+        before { fiscal_code.config.country_code { 'The North' } }
+
+        it 'returns the result of the country-block execution' do
+          fiscal_code.birthplace_part.should == 'The North'
         end
       end
 
-      context 'the country is not Italy' do
-        before { fiscal_code.citizen.country_name = 'Francia' }
+      context 'when codes are fetched using csv' do
+        before { CodiceFiscale::Codes.stub!(:country).and_return('Middle-Earth') }
 
-        it 'returns the associated code' do
-          fiscal_code.country_code.should == 'Z110'
-        end
-      end
-
-      context 'a block is configured to be called' do
-        before { fiscal_code.config.country_code { "bar" } }
-
-        it 'returns the result of the block execution' do
-          fiscal_code.country_code.should == 'bar'
+        it 'returns the country code' do
+          fiscal_code.birthplace_part.should == 'Middle-Earth'
         end
       end
     end
+  end
 
-    describe '#birthplace_part' do
-      context 'whene the country is Italy' do
-        it 'return the city_code' do
-          fiscal_code.birthplace_part.should == fiscal_code.city_code
-        end
-      end
-    end
-
-
-    describe '#control_character' do
-      it 'returns the expected letter' do
-        fiscal_code.control_character('RSSMRA87A01A005').should == 'V'
-      end
+  describe '#control_character' do
+    it 'returns the expected letter' do
+      fiscal_code.control_character('RSSMRA87A01A005').should == 'V'
     end
   end
 end
