@@ -2,7 +2,7 @@
 require File.expand_path('../lib/codice_fiscale/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Daniele Molteni"]
+  gem.authors       = ["topac"]
   gem.email         = ["dani.m.mobile@gmail.com"]
   gem.description   = %q{Calculate the italian fiscal code}
   gem.summary       = %q{Calculate the italian fiscal code}
