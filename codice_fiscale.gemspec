@@ -22,6 +22,6 @@ Gem::Specification.new do |gem|
   # The growl app must be separately downloaded and installed
   gem.add_development_dependency 'growl'
 
-  gem.add_dependency 'active_support'
+  gem.add_dependency 'activesupport'
   gem.add_dependency 'activemodel'
 end
