@@ -110,7 +110,7 @@ describe CodiceFiscale::FiscalCode do
       end
 
       context 'when codes are fetched using csv' do
-        before { CodiceFiscale::Codes.stub!(:city).and_return('hello') }
+        before { CodiceFiscale::Codes.stub(:city).and_return('hello') }
 
         it 'returns the city code' do
           fiscal_code.birthplace_part.should == 'hello'
@@ -130,7 +130,7 @@ describe CodiceFiscale::FiscalCode do
       end
 
       context 'when codes are fetched using csv' do
-        before { CodiceFiscale::Codes.stub!(:country).and_return('Middle-Earth') }
+        before { CodiceFiscale::Codes.stub(:country).and_return('Middle-Earth') }
 
         it 'returns the country code' do
           fiscal_code.birthplace_part.should == 'Middle-Earth'
