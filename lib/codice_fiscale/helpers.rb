@@ -1,22 +1,20 @@
 module CodiceFiscale
   module Helpers
-    def intersection string_a, string_or_array_b
-      letters_a = string_a.split ''
-      letters_b = string_or_array_b.respond_to?(:split) ? string_or_array_b.split('') : string_or_array_b
-      selected_letters = letters_a.select { |letter| letters_b.include? letter }
-      selected_letters.join ''
+
+    def multiset_intersection array_a, array_b
+      array_a.select { |letter| array_b.include? letter }
     end
 
     def consonants string
-      intersection string, Alphabet.consonants
+      multiset_intersection(string.chars, Alphabet.consonants).join
     end
 
     def first_three_consonants string
-      intersection(string, Alphabet.consonants)[0..2]
+      multiset_intersection(string.chars, Alphabet.consonants)[0..2].join
     end
 
     def first_three_vowels string
-      intersection(string, Alphabet.vowels)[0..2]
+      multiset_intersection(string.chars, Alphabet.vowels)[0..2].join
     end
 
     def truncate_and_right_pad_with_three_x string
@@ -29,5 +27,6 @@ module CodiceFiscale
       code << first_three_vowels(string)
       truncate_and_right_pad_with_three_x code
     end
+
   end
 end
