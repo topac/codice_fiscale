@@ -11,9 +11,15 @@ gender, birthdate and the birthplace. Read more on [wikipedia](http://en.wikiped
 ```ruby
   require 'codice_fiscale'
 
-  CodiceFiscale.calculate :name => 'Mario', :surname => 'Rossi', :gender => :male, :birthdate => Date.new(1987, 1, 1), :province_code => 'LC', :city_name => 'Abbadia Lariana'
-
-  # RSSMRA87A01A005V
+  CodiceFiscale.calculate(
+    :name          => 'Mario',
+    :surname       => 'Rossi', 
+    :gender        => :male,
+    :birthdate     => Date.new(1987, 1, 1),
+    :province_code => 'LC', 
+    :city_name     => 'Abbadia Lariana'
+  )
+  #=> RSSMRA87A01A005V
 ```
 
 ## City codes (Codici catastali)
@@ -22,11 +28,17 @@ If a person was born outside Italy, only the italian name of the county is requi
 For example, an italian citizen born in France:
 
 ```ruby
-  CodiceFiscale.calculate :name => 'Mario', :surname => 'Rossi', :gender => :male, :birthdate => Date.new(1987, 1, 1), :country_name => 'Francia'
+  CodiceFiscale.calculate(
+    :name         => 'Mario', 
+    :surname      => 'Rossi', 
+    :gender       => :male, 
+    :birthdate    => Date.new(1987, 1, 1), 
+    :country_name => 'Francia'
+  )
 ```
 
 If a person was born in Italy you have to specify the *code* of the province and the *name* of the city. These informations are actually contained in an XLS 
-document downloaded from [agenziaterritorio.it](http://www.agenziaterritorio.it/?id=721), converted to CSV and shipped with this gem.
+document downloaded from [istat.it](http://www.istat.it/it/archivio/6789), converted to CSV and shipped with this gem.
 
 **But what if you have your own table with all those codes?**
 
