@@ -18,7 +18,7 @@ module CodiceFiscale
 
   def self.calculate params
     citizen = ItalianCitizen.new params
-    raise ArgumentError.new("#{citizen.errors}") unless citizen.valid?
+    raise ArgumentError.new(citizen.errors.full_messages.join(', ')) unless citizen.valid?
     citizen.fiscal_code
   end
 end
