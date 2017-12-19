@@ -22,9 +22,9 @@ module CodiceFiscale
     end
 
     def first_three_consonants_than_vowels string
-      string.upcase!
-      code = first_three_consonants string
-      code << first_three_vowels(string)
+      upcase_string = string.upcase
+      code = first_three_consonants upcase_string
+      code << first_three_vowels(upcase_string)
       truncate_and_right_pad_with_three_x code
     end
 
