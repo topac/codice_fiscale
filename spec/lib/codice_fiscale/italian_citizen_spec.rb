@@ -9,11 +9,11 @@ describe CodiceFiscale::ItalianCitizen do
 
   describe '#initialize' do
     it 'accepts 1 attribute' do
-      lambda { marco }.should_not raise_error
+      expect { marco }.not_to raise_error
     end
 
     it 'do not accepts 0 attribute' do
-      lambda { described_class.new }.should raise_error(ArgumentError)
+      expect { described_class.new }.to raise_error(ArgumentError)
     end
   end
 
@@ -21,8 +21,8 @@ describe CodiceFiscale::ItalianCitizen do
   describe '#validations' do
     describe 'when all attributes are valid' do
       it 'is valid' do
-        marco.should be_valid
-        john.should be_valid
+        expect(marco).to be_valid
+        expect(john).to be_valid
       end
     end
 
@@ -31,7 +31,7 @@ describe CodiceFiscale::ItalianCitizen do
 
       it 'is not valid' do
         citizen_without_name.valid?
-        citizen_without_name.errors[:name].should_not be_empty
+        expect(citizen_without_name.errors[:name]).not_to be_empty
       end
     end
 
@@ -40,7 +40,7 @@ describe CodiceFiscale::ItalianCitizen do
 
       it 'is not valid' do
         citizen_with_strange_gender.valid?
-        citizen_with_strange_gender.errors[:gender].should_not be_empty
+        expect(citizen_with_strange_gender.errors[:gender]).not_to be_empty
       end
     end
 
@@ -49,7 +49,7 @@ describe CodiceFiscale::ItalianCitizen do
 
       it 'is not valid' do
         citizen_with_invalid_province.valid?
-        citizen_with_invalid_province.errors[:province_code].should_not be_empty
+        expect(citizen_with_invalid_province.errors[:province_code]).not_to be_empty
       end
     end
 
@@ -58,7 +58,7 @@ describe CodiceFiscale::ItalianCitizen do
 
       it 'is not valid' do
         citizen_with_invalid_date.valid?
-        citizen_with_invalid_date.errors[:birthdate].should_not be_empty
+        expect(citizen_with_invalid_date.errors[:birthdate]).not_to be_empty
       end
     end
   end

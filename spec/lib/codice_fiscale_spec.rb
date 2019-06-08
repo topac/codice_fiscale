@@ -11,14 +11,14 @@ describe CodiceFiscale do
     end
 
     it 'returns the expected code' do
-      subject.calculate(mario_attributes).should == 'RSSMRA87A01A005V'
+      expect(subject.calculate(mario_attributes)).to eq 'RSSMRA87A01A005V'
     end
 
     context 'when params are not valid' do
       let(:invalid_attributes) { mario_attributes.merge(:name => '') }
 
       it 'raises an error' do
-        lambda { subject.calculate(invalid_attributes) }.should raise_error(ArgumentError)
+        expect { subject.calculate(invalid_attributes) }.to raise_error(ArgumentError)
       end
     end
   end

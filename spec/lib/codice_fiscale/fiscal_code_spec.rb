@@ -1,23 +1,33 @@
 require 'spec_helper'
 
 describe CodiceFiscale::FiscalCode do
-  let(:citizen_marco_galli) { CodiceFiscale::ItalianCitizen.new :name => 'Marco', :surname => 'Galli', :gender => :male, :birthdate => Date.new(1983, 5, 3), :city_name => 'Oggiono', :province_code => 'LC' }
+  let(:citizen_marco_galli) do
+    CodiceFiscale::ItalianCitizen.new(
+      :name           => 'Marco',
+      :surname        => 'Galli',
+      :gender         => :male,
+      :birthdate      => Date.new(1983, 5, 3),
+      :city_name      => 'Oggiono',
+      :province_code  => 'LC'
+    )
+  end
+
   let(:fiscal_code) { described_class.new citizen_marco_galli }
 
   describe '#surname_part' do
     it 'takes the first 3 consonants' do
-      fiscal_code.surname_part.should == 'GLL'
+      expect(fiscal_code.surname_part).to eq 'GLL'
     end
 
     it 'is 3 chrs long' do
-      fiscal_code.surname_part.size.should == 3
+      expect(fiscal_code.surname_part.size).to eq 3
     end
 
     context 'when surname has only 1 consonant' do
       before { fiscal_code.citizen.surname = 'oof' }
 
       it 'puts the vowels after the consonants' do
-        fiscal_code.surname_part.should == 'FOO'
+        expect(fiscal_code.surname_part).to eq 'FOO'
       end
     end
 
@@ -25,21 +35,21 @@ describe CodiceFiscale::FiscalCode do
       before { fiscal_code.citizen.surname = 'm' }
 
       it 'pads with the "X" character' do
-        fiscal_code.surname_part.should == 'MXX'
+        expect(fiscal_code.surname_part).to eq 'MXX'
       end
     end
   end
 
   describe '#name_part' do
     it 'is 3 chrs long' do
-      fiscal_code.name_part.size.should == 3
+      expect(fiscal_code.name_part.size).to eq 3
     end
 
     context 'when name has 4 or more consonants' do
       before { fiscal_code.citizen.name = 'danielino' }
 
       it 'takes the 1st the 3rd and the 4th' do
-        fiscal_code.name_part.should == 'DLN'
+        expect(fiscal_code.name_part).to eq 'DLN'
       end
     end
 
@@ -47,7 +57,7 @@ describe CodiceFiscale::FiscalCode do
       before { fiscal_code.citizen.name = 'daniele' }
 
       it 'takes the first 3 consonants' do
-        fiscal_code.name_part.should == 'DNL'
+        expect(fiscal_code.name_part).to eq 'DNL'
       end
     end
 
@@ -55,7 +65,7 @@ describe CodiceFiscale::FiscalCode do
       before { fiscal_code.citizen.name = 'bar' }
 
       it 'puts the vowels after the consonants' do
-        fiscal_code.name_part.should == 'BRA'
+        expect(fiscal_code.name_part).to eq 'BRA'
       end
     end
 
@@ -63,7 +73,7 @@ describe CodiceFiscale::FiscalCode do
       before { fiscal_code.citizen.name = 'd' }
 
       it 'pad with the "X" character' do
-        fiscal_code.name_part.should == 'DXX'
+        expect(fiscal_code.name_part).to eq 'DXX'
       end
     end
   end
@@ -71,14 +81,16 @@ describe CodiceFiscale::FiscalCode do
 
   describe '#birthdate_part' do
     it 'start with the last 2 digit of the year' do
-      fiscal_code.birthdate_part.should start_with '83'
+      expect(fiscal_code.birthdate_part).to start_with '83'
     end
 
     describe 'the 3rd character' do
-      before { CodiceFiscale::Codes.stub(:month_letter).and_return('X') }
+      before do
+        allow(CodiceFiscale::Codes).to receive(:month_letter).and_return('X')
+      end
 
       it 'is the month code' do
-        fiscal_code.birthdate_part[2].should == 'X'
+        expect(fiscal_code.birthdate_part[2]).to eq 'X'
       end
     end
 
@@ -86,13 +98,13 @@ describe CodiceFiscale::FiscalCode do
       context 'gender is male' do
         before { fiscal_code.citizen.gender = :male }
 
-        it('is the birth day') { fiscal_code.birthdate_part[3..5].should == '03' }
+        it('is the birth day') { expect(fiscal_code.birthdate_part[3..5]).to eq '03' }
       end
 
       context 'gender is female' do
         before { fiscal_code.citizen.gender = :female }
 
-        it('is the birth day + 40') { fiscal_code.birthdate_part[3..5].should == '43' }
+        it('is the birth day + 40') { expect(fiscal_code.birthdate_part[3..5]).to eq '43' }
       end
     end
   end
@@ -105,15 +117,17 @@ describe CodiceFiscale::FiscalCode do
         before { fiscal_code.config.city_code { 'Winterfell' } }
 
         it 'returns the result of the city-block execution' do
-          fiscal_code.birthplace_part.should == 'Winterfell'
+          expect(fiscal_code.birthplace_part). to eq 'Winterfell'
         end
       end
 
       context 'when codes are fetched using csv' do
-        before { CodiceFiscale::Codes.stub(:city).and_return('hello') }
+        before do
+          allow(CodiceFiscale::Codes).to receive(:city).and_return('hello')
+        end
 
         it 'returns the city code' do
-          fiscal_code.birthplace_part.should == 'hello'
+          expect(fiscal_code.birthplace_part).to eq 'hello'
         end
       end
     end
@@ -125,15 +139,17 @@ describe CodiceFiscale::FiscalCode do
         before { fiscal_code.config.country_code { 'The North' } }
 
         it 'returns the result of the country-block execution' do
-          fiscal_code.birthplace_part.should == 'The North'
+          expect(fiscal_code.birthplace_part).to eq 'The North'
         end
       end
 
       context 'when codes are fetched using csv' do
-        before { CodiceFiscale::Codes.stub(:country).and_return('Middle-Earth') }
+        before do
+          allow(CodiceFiscale::Codes).to receive(:country).and_return('Middle-Earth')
+        end
 
         it 'returns the country code' do
-          fiscal_code.birthplace_part.should == 'Middle-Earth'
+          expect(fiscal_code.birthplace_part).to eq 'Middle-Earth'
         end
       end
     end
@@ -141,7 +157,7 @@ describe CodiceFiscale::FiscalCode do
 
   describe '#control_character' do
     it 'returns the expected letter' do
-      fiscal_code.control_character('RSSMRA87A01A005').should == 'V'
+      expect(fiscal_code.control_character('RSSMRA87A01A005')).to eq 'V'
     end
   end
 end

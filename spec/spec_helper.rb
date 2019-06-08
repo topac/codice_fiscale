@@ -3,5 +3,3 @@ def fixtures_path
 end
 
 require File.expand_path '../../lib/codice_fiscale', __FILE__
-
-

@@ -3,23 +3,31 @@ require 'spec_helper'
 describe CodiceFiscale::Alphabet do
   describe '#letters' do
     it 'is 26 long' do
-      subject.letters.size.should == 26
+      expect(subject.letters.size).to eq 26
     end
 
-    it 'return only upcased letters' do
-      subject.letters.each { |letter| letter.upcase.should == letter }
+    it 'consists only of upcased letters' do
+      expect(subject.letters.join).to match /^[A-Z]{1,}$/
     end
   end
 
   describe '#consonants' do
     it 'is 21 long' do
-      subject.consonants.size.should == 21
+      expect(subject.consonants.size).to eq 21
+    end
+
+    it 'consists only of upcased letters' do
+      expect(subject.vowels.join).to match /^[A-Z]{1,}$/
     end
   end
 
-  describe '#vocals' do
-    it 'return only upcased letters' do
-      subject.letters.each { |letter| letter.upcase.should == letter }
+  describe '#vowels' do
+    it 'is 5 long' do
+      expect(subject.vowels.size).to eq 5
+    end
+
+    it 'consists only of upcased letters' do
+      expect(subject.vowels.join).to match /^[A-Z]{1,}$/
     end
   end
 end
