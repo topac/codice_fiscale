@@ -16,7 +16,7 @@ describe CodiceFiscale do
         [{:name => "John", :surname => "Smith", :gender => :male, :birthdate => Date.new(1988, 5, 3), :country_name => "Francia"}, "SMTJHN88E03Z110R"],
         [{:name => "John", :surname => "Smith", :gender => :male, :birthdate => Date.new(1988, 5, 3), :country_name => "France"}, "SMTJHN88E03Z110R"],
         [{:name => "John", :surname => "Smith", :gender => :male, :birthdate => Date.new(1988, 5, 3), :country_name => "Sao Tomé e Principe"}, "SMTJHN88E03Z341A"],
-        [{:name => "Marco", :surname => "Rossi", :gender => :male, :birthdate => Date.new(1983, 5, 3), :city_name => "Forlì", p:province_code =>"FC"}, "RSSMRC83E03D704X"],
+        [{:name => "Marco", :surname => "Rossi", :gender => :male, :birthdate => Date.new(1983, 5, 3), :city_name => "Forlì", :province_code =>"FC"}, "RSSMRC83E03D704X"],
       ].each do |row|
         params, expected_code = row[0], row[1]
         expect(subject.calculate(params)).to eq expected_code
