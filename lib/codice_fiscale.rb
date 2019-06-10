@@ -48,7 +48,7 @@ module CodiceFiscale
 
     # parse it and rebuild a new CSV selecting only the columns I need
     CSV.open(config.city_codes_csv_path, "wb") do |csv|
-      CSV.parse(data, col_sep: ";", row_sep: "\r\n").each_with_index do |r, index|
+      CSV.parse(data, :col_sep => ";", :row_sep => "\r\n").each_with_index do |r, index|
         next if index == 0
 
         c, p, x = *[r[5], r[13], r[18]].map(&:strip)
@@ -81,7 +81,7 @@ module CodiceFiscale
 
     # parse it and rebuild a new CSV selecting only the columns I need
     CSV.open(config.country_codes_csv_path, "wb") do |csv|
-      CSV.parse(data, col_sep: ";", row_sep: "\r\n").each_with_index do |r, index|
+      CSV.parse(data, :col_sep => ";", :row_sep => "\r\n").each_with_index do |r, index|
         next if index == 0
         next if r.compact.empty?
 
