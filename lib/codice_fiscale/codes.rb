@@ -24,8 +24,8 @@ module CodiceFiscale
     def city city_name, province_code
       return config.city_code.call(city_name, province_code) if config.city_code
       CSV.foreach config.city_codes_csv_path do |row|
-        if city_name.casecmp(row[3].strip).zero? and province_code.casecmp(row[2].strip).zero?
-          return row[0].strip.upcase
+        if city_name.casecmp(row[0]).zero? and province_code.casecmp(row[1]).zero?
+          return row[2].upcase
         end
       end
       nil
@@ -34,7 +34,7 @@ module CodiceFiscale
     def country country_name
       return config.country_code.call(country_name) if config.country_code
       CSV.foreach config.country_codes_csv_path do |row|
-        return row[3].strip.upcase if country_name.casecmp(row[2].strip).zero?
+        return row[2].upcase if country_name.casecmp(row[0]).zero? or country_name.casecmp(row[1]).zero?
       end
       nil
     end
