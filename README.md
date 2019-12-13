@@ -3,9 +3,9 @@
 
 # Codice Fiscale (Italian Tax ID)
 
-A Ruby gem that calculates the *Codice FIscale* (Italian Tax ID).
+A Ruby gem that calculates the *Codice Fiscale* (Italian Tax ID).
 
-The *Codice FIscale* is an identifier unique to each person that is used when dealing with Italian government offices or for private concerns and is formulated using a combination of the person’s name, place and date of birth.  Usually it is attributed by the Office of Income Revenue (*Agenzia delle Entrate*) through local tax offices.
+The *Codice Fiscale* is an identifier unique to each person that is used when dealing with Italian government offices or for private concerns and is formulated using a combination of the person’s name, place and date of birth.  Usually it is attributed by the Office of Income Revenue (*Agenzia delle Entrate*) through local tax offices.
 
 The code is 16 characters long and includes both letters and numbers, for e.g: `RSSMRA90A01H501W` (taken from [this sample card](https://i.imgur.com/UVXKDX8.png)). Read more on [wikipedia](http://en.wikipedia.org/wiki/Italian_fiscal_code_card) or [here](https://itamcap.com/italian-tax-id).
 
@@ -39,7 +39,7 @@ And then execute the `bundle install` command.
 ```
 
 ## City codes (Codici Catastali)
-As explained above, one of the information required to calculate the fiscal code is the birthplace.  
+As explained above, one of the information required to calculate the tax ID is the birthplace.  
 If a person was born outside Italy, only the italian name of the country is required.  
 For example, an italian citizen born in France:
 
