@@ -1,4 +1,4 @@
-Agli√®,TO,A074
+AgliË,TO,A074
 Airasca,TO,A109
 Ala di Stura,TO,A117
 Albiano d'Ivrea,TO,A157
@@ -82,7 +82,7 @@ Chivasso,TO,C665
 Ciconio,TO,C679
 Cintano,TO,C711
 Cinzano,TO,C715
-Ciri√®,TO,C722
+CiriË,TO,C722
 Claviere,TO,C793
 Coassolo Torinese,TO,C801
 Coazze,TO,C803
@@ -94,7 +94,7 @@ Corio,TO,D008
 Cossano Canavese,TO,D092
 Cuceglio,TO,D197
 Cumiana,TO,D202
-Cuorgn√®,TO,D208
+CuorgnË,TO,D208
 Druento,TO,D373
 Exilles,TO,D433
 Favria,TO,D520
@@ -133,17 +133,17 @@ Levone,TO,E566
 Locana,TO,E635
 Lombardore,TO,E660
 Lombriasco,TO,E661
-Loranz√®,TO,E683
+LoranzË,TO,E683
 Luserna San Giovanni,TO,E758
 Lusernetta,TO,E759
-Lusigli√®,TO,E763
+LusigliË,TO,E763
 Macello,TO,E782
 Maglione,TO,E817
 Marentino,TO,E941
 Massello,TO,F041
 Mathi,TO,F053
 Mattie,TO,F058
-Mazz√®,TO,F067
+MazzË,TO,F067
 Meana di Susa,TO,F074
 Mercenasco,TO,F140
 Mezzenile,TO,F182
@@ -192,7 +192,7 @@ Piscina,TO,G705
 Piverone,TO,G719
 Poirino,TO,G777
 Pomaretto,TO,G805
-Pont-Canavese,TO,G826
+Pont Canavese,TO,G826
 Porte,TO,G900
 Pragelato,TO,G973
 Prali,TO,G978
@@ -219,7 +219,7 @@ Roletto,TO,H498
 Romano Canavese,TO,H511
 Ronco Canavese,TO,H539
 Rondissone,TO,H547
-Ror√†,TO,H554
+Ror‡,TO,H554
 Roure,TO,H555
 Rosta,TO,H583
 Rubiana,TO,H627
@@ -287,8 +287,8 @@ Venaus,TO,L726
 Venaria Reale,TO,L727
 Verolengo,TO,L779
 Verrua Savoia,TO,L787
-Vestign√®,TO,L811
-Vialfr√®,TO,L830
+VestignË,TO,L811
+VialfrË,TO,L830
 Vidracco,TO,L857
 Vigone,TO,L898
 Villafranca Piemonte,TO,L948
@@ -304,7 +304,7 @@ Vinovo,TO,M060
 Virle Piemonte,TO,M069
 Vische,TO,M071
 Vistrorio,TO,M080
-Vi√π,TO,M094
+Vi˘,TO,M094
 Volpiano,TO,M122
 Volvera,TO,M133
 Mappano,TO,M316
@@ -317,7 +317,7 @@ Arborio,VC,A358
 Asigliano Vercellese,VC,A466
 Balmuccia,VC,A600
 Balocco,VC,A601
-Bianz√®,VC,A847
+BianzË,VC,A847
 Boccioleto,VC,A914
 Borgo d'Ale,VC,B009
 Borgosesia,VC,B041
@@ -376,7 +376,7 @@ Salasco,VC,H690
 Sali Vercellese,VC,H707
 Saluggia,VC,H725
 San Germano Vercellese,VC,H861
-Santhi√†,VC,I337
+Santhi‡,VC,I337
 Scopa,VC,I544
 Scopello,VC,I545
 Serravalle Sesia,VC,I663
@@ -492,7 +492,7 @@ Baldissero d'Alba,CN,A589
 Barbaresco,CN,A629
 Barge,CN,A660
 Barolo,CN,A671
-Bastia Mondov√¨,CN,A709
+Bastia MondovÏ,CN,A709
 Battifollo,CN,A716
 Beinette,CN,A735
 Bellino,CN,A750
@@ -519,8 +519,8 @@ Canosio,CN,B621
 Caprauna,CN,B692
 Caraglio,CN,B719
 Caramagna Piemonte,CN,B720
-Card√®,CN,B755
-Carr√π,CN,B841
+CardË,CN,B755
+Carr˘,CN,B841
 Cartignano,CN,B845
 Casalgrasso,CN,B894
 Castagnito,CN,C046
@@ -545,7 +545,7 @@ Cervere,CN,C550
 Ceva,CN,C589
 Cherasco,CN,C599
 Chiusa di Pesio,CN,C653
-Cigli√®,CN,C681
+CigliË,CN,C681
 Cissone,CN,C738
 Clavesana,CN,C792
 Corneliano d'Alba,CN,D022
@@ -606,11 +606,11 @@ Monastero di Vasco,CN,F326
 Monasterolo Casotto,CN,F329
 Monasterolo di Savigliano,CN,F330
 Monchiero,CN,F338
-Mondov√¨,CN,F351
+MondovÏ,CN,F351
 Monesiglio,CN,F355
 Monforte d'Alba,CN,F358
-Mont√†,CN,F385
-Montaldo di Mondov√¨,CN,F405
+Mont‡,CN,F385
+Montaldo di MondovÏ,CN,F405
 Montaldo Roero,CN,F408
 Montanera,CN,F424
 Montelupo Albese,CN,F550
@@ -664,9 +664,9 @@ Roascio,CN,H363
 Robilante,CN,H377
 Roburent,CN,H378
 Roccabruna,CN,H385
-Rocca Cigli√®,CN,H391
+Rocca CigliË,CN,H391
 Rocca de' Baldi,CN,H395
-Roccaforte Mondov√¨,CN,H407
+Roccaforte MondovÏ,CN,H407
 Roccasparvera,CN,H447
 Roccavione,CN,H453
 Rocchetta Belbo,CN,H462
@@ -684,9 +684,9 @@ Sambuco,CN,H746
 Sampeyre,CN,H755
 San Benedetto Belbo,CN,H770
 San Damiano Macra,CN,H812
-Sanfr√®,CN,H851
+SanfrË,CN,H851
 Sanfront,CN,H852
-San Michele Mondov√¨,CN,I037
+San Michele MondovÏ,CN,I037
 Sant'Albano Stura,CN,I210
 Santa Vittoria d'Alba,CN,I316
 Santo Stefano Belbo,CN,I367
@@ -703,12 +703,12 @@ Sommariva Perno,CN,I823
 Stroppo,CN,I985
 Tarantasca,CN,L048
 Torre Bormida,CN,L252
-Torre Mondov√¨,CN,L241
+Torre MondovÏ,CN,L241
 Torre San Giorgio,CN,L278
 Torresina,CN,L281
 Treiso,CN,L367
 Trezzo Tinella,CN,L410
-Trinit√†,CN,L427
+Trinit‡,CN,L427
 Valdieri,CN,L558
 Valgrana,CN,L580
 Valloriate,CN,L631
@@ -720,7 +720,7 @@ Vezza d'Alba,CN,L817
 Vicoforte,CN,L841
 Vignolo,CN,L888
 Villafalletto,CN,L942
-Villanova Mondov√¨,CN,L974
+Villanova MondovÏ,CN,L974
 Villanova Solaro,CN,L990
 Villar San Costanzo,CN,M015
 Vinadio,CN,M055
@@ -739,13 +739,13 @@ Bruno,AT,B221
 Bubbio,AT,B236
 Buttigliera d'Asti,AT,B306
 Calamandrana,AT,B376
-Calliano,AT,B418
+Calliano Monferrato,AT,B418
 Calosso,AT,B425
 Camerano Casasco,AT,B469
 Canelli,AT,B594
 Cantarana,AT,B633
 Capriglio,AT,B707
-Casorzo,AT,B991
+Casorzo Monferrato,AT,B991
 Cassinasco,AT,C022
 Castagnole delle Lanze,AT,C049
 Castagnole Monferrato,AT,C047
@@ -780,7 +780,7 @@ Dusino San Michele,AT,D388
 Ferrere,AT,D554
 Fontanile,AT,D678
 Frinco,AT,D802
-Grana,AT,E134
+Grana Monferrato,AT,E134
 Grazzano Badoglio,AT,E159
 Incisa Scapaccino,AT,E295
 Isola d'Asti,AT,E338
@@ -802,14 +802,13 @@ Montaldo Scarampi,AT,F409
 Montechiaro d'Asti,AT,F468
 Montegrosso d'Asti,AT,F527
 Montemagno,AT,F556
-Moransengo,AT,F709
 Nizza Monferrato,AT,F902
 Olmo Gentile,AT,G048
 Passerano Marmorito,AT,G358
 Penango,AT,G430
 Piea,AT,G593
 Pino d'Asti,AT,G676
-Piov√† Massaia,AT,G692
+Piov‡ Massaia,AT,G692
 Portacomaro,AT,G894
 Quaranti,AT,H102
 Refrancore,AT,H219
@@ -832,7 +831,6 @@ Settime,AT,I698
 Soglio,AT,I781
 Tigliole,AT,L168
 Tonco,AT,L203
-Tonengo,AT,L204
 Vaglio Serra,AT,L531
 Valfenera,AT,L574
 Vesime,AT,L807
@@ -844,6 +842,7 @@ Villanova d'Asti,AT,L984
 Villa San Secondo,AT,M019
 Vinchio,AT,M058
 Montiglio Monferrato,AT,M302
+Moransengo-Tonengo,AT,M434
 Acqui Terme,AL,A052
 Albera Ligure,AL,A146
 Alessandria,AL,A182
@@ -886,7 +885,7 @@ Casalnoceto,AL,B902
 Casasco,AL,B941
 Cassine,AL,C027
 Cassinelle,AL,C030
-Castellania,AL,C137
+Castellania Coppi,AL,C137
 Castellar Guidobono,AL,C142
 Castellazzo Bormida,AL,C148
 Castelletto d'Erro,AL,C156
@@ -1045,7 +1044,7 @@ Candelo,BI,B586
 Caprile,BI,B708
 Casapinta,BI,B933
 Castelletto Cervo,BI,C155
-Cavagli√†,BI,C363
+Cavagli‡,BI,C363
 Cerrione,BI,C532
 Coggiola,BI,C819
 Cossato,BI,D094
@@ -1180,7 +1179,7 @@ Vogogna,VB,M111
 Borgomezzavalle,VB,M370
 Valle Cannobina,VB,M404
 Allein,AO,A205
-Antey-Saint-Andr√©,AO,A305
+Antey-Saint-AndrÈ,AO,A305
 Aosta,AO,A326
 Arnad,AO,A424
 Arvier,AO,A452
@@ -1198,25 +1197,25 @@ Chamois,AO,B491
 Champdepraz,AO,C596
 Champorcher,AO,B540
 Charvensod,AO,C598
-Ch√¢tillon,AO,C294
+Ch‚tillon,AO,C294
 Cogne,AO,C821
 Courmayeur,AO,D012
 Donnas,AO,D338
 Doues,AO,D356
-Emar√®se,AO,D402
+EmarËse,AO,D402
 Etroubles,AO,D444
-F√©nis,AO,D537
+FÈnis,AO,D537
 Fontainemore,AO,D666
 Gaby,AO,D839
 Gignod,AO,E029
 Gressan,AO,E165
-Gressoney-La-Trinit√©,AO,E167
+Gressoney-La-TrinitÈ,AO,E167
 Gressoney-Saint-Jean,AO,E168
-H√¥ne,AO,E273
+HÙne,AO,E273
 Introd,AO,E306
 Issime,AO,E369
 Issogne,AO,E371
-Joven√ßan,AO,E391
+JovenÁan,AO,E391
 La Magdeleine,AO,A308
 La Salle,AO,E458
 La Thuile,AO,E470
@@ -1231,10 +1230,10 @@ Pollein,AO,G794
 Pontboset,AO,G545
 Pontey,AO,G860
 Pont-Saint-Martin,AO,G854
-Pr√©-Saint-Didier,AO,H042
+PrÈ-Saint-Didier,AO,H042
 Quart,AO,H110
-Rh√™mes-Notre-Dame,AO,H262
-Rh√™mes-Saint-Georges,AO,H263
+RhÍmes-Notre-Dame,AO,H262
+RhÍmes-Saint-Georges,AO,H263
 Roisan,AO,H497
 Saint-Christophe,AO,H669
 Saint-Denis,AO,H670
@@ -1242,7 +1241,7 @@ Saint-Marcel,AO,H671
 Saint-Nicolas,AO,H672
 Saint-Oyen,AO,H673
 Saint-Pierre,AO,H674
-Saint-Rh√©my-en-Bosses,AO,H675
+Saint-RhÈmy-en-Bosses,AO,H675
 Saint-Vincent,AO,H676
 Sarre,AO,I442
 Torgnon,AO,L217
@@ -1251,7 +1250,7 @@ Valpelline,AO,L643
 Valsavarenche,AO,L647
 Valtournenche,AO,L654
 Verrayes,AO,L783
-Verr√®s,AO,C282
+VerrËs,AO,C282
 Villeneuve,AO,L981
 Agra,VA,A085
 Albizzate,VA,A167
@@ -1261,7 +1260,6 @@ Arsago Seprio,VA,A441
 Azzate,VA,A531
 Azzio,VA,A532
 Barasso,VA,A619
-Bardello,VA,A645
 Bedero Valcuvia,VA,A728
 Besano,VA,A819
 Besnate,VA,A825
@@ -1270,7 +1268,6 @@ Biandronno,VA,A845
 Bisuschio,VA,A891
 Bodio Lomnago,VA,A918
 Brebbia,VA,B126
-Bregano,VA,B131
 Brenta,VA,B150
 Brezzo di Bedero,VA,B166
 Brinzio,VA,B182
@@ -1345,7 +1342,6 @@ Lonate Pozzolo,VA,E666
 Lozza,VA,E707
 Luino,VA,E734
 Luvinate,VA,E769
-Malgesso,VA,E856
 Malnate,VA,E863
 Marchirolo,VA,E929
 Marnate,VA,E965
@@ -1386,11 +1382,12 @@ Vedano Olona,VA,L703
 Venegono Inferiore,VA,L733
 Venegono Superiore,VA,L734
 Vergiate,VA,L765
-Viggi√π,VA,L876
+Viggi˘,VA,L876
 Vizzola Ticino,VA,M101
 Sangiano,VA,H872
 Maccagno con Pino e Veddasca,VA,M339
 Cadrezzate con Osmate,VA,M425
+Bardello con Malgesso e Bregano,VA,M433
 Albavilla,CO,A143
 Albese con Cassano,CO,A153
 Albiolo,CO,A164
@@ -1417,7 +1414,7 @@ Cabiate,CO,B313
 Cadorago,CO,B346
 Caglio,CO,B355
 Campione d'Italia,CO,B513
-Cant√π,CO,B639
+Cant˘,CO,B639
 Canzo,CO,B641
 Capiago Intimiano,CO,B653
 Carate Urio,CO,B730
@@ -1450,7 +1447,7 @@ Erba,CO,D416
 Eupilio,CO,D445
 Faggeto Lario,CO,D462
 Faloppio,CO,D482
-Fenegr√≤,CO,D531
+FenegrÚ,CO,D531
 Figino Serenza,CO,D579
 Fino Mornasco,CO,D605
 Garzeno,CO,D930
@@ -1753,7 +1750,7 @@ Adrara San Martino,BG,A057
 Adrara San Rocco,BG,A058
 Albano Sant'Alessandro,BG,A129
 Albino,BG,A163
-Alm√®,BG,A214
+AlmË,BG,A214
 Almenno San Bartolomeo,BG,A216
 Almenno San Salvatore,BG,A217
 Alzano Lombardo,BG,A246
@@ -1977,7 +1974,7 @@ Viadanica,BG,L827
 Vigano San Martino,BG,L865
 Vigolo,BG,L894
 Villa d'Adda,BG,L929
-Villa d'Alm√®,BG,A215
+Villa d'AlmË,BG,A215
 Villa di Serio,BG,L936
 Villa d'Ogna,BG,L938
 Villongo,BG,M045
@@ -2148,19 +2145,19 @@ Preseglie,BS,H043
 Prevalle,BS,H055
 Provaglio d'Iseo,BS,H078
 Provaglio Val Sabbia,BS,H077
-Puegnago sul Garda,BS,H086
+Puegnago del Garda,BS,H086
 Quinzano d'Oglio,BS,H140
 Remedello,BS,H230
 Rezzato,BS,H256
 Roccafranca,BS,H410
 Rodengo Saiano,BS,H477
-Ro√® Volciano,BS,H484
+RoË Volciano,BS,H484
 Roncadelle,BS,H525
 Rovato,BS,H598
 Rudiano,BS,H630
 Sabbio Chiese,BS,H650
 Sale Marasino,BS,H699
-Sal√≤,BS,H717
+SalÚ,BS,H717
 San Felice del Benaco,BS,H838
 San Gervasio Bresciano,BS,H865
 San Zeno Naviglio,BS,I412
@@ -2174,7 +2171,7 @@ Soiano del Lago,BS,I782
 Sonico,BS,I831
 Sulzano,BS,L002
 Tavernole sul Mella,BS,C698
-Tem√π,BS,L094
+Tem˘,BS,L094
 Tignale,BS,L169
 Torbole Casaglia,BS,L210
 Toscolano-Maderno,BS,L312
@@ -2205,7 +2202,7 @@ Arena Po,PV,A387
 Badia Pavese,PV,A538
 Bagnaria,PV,A550
 Barbianello,PV,A634
-Bascap√®,PV,A690
+BascapË,PV,A690
 Bastida Pancarana,PV,A712
 Battuda,PV,A718
 Belgioioso,PV,A741
@@ -2260,7 +2257,7 @@ Fortunago,PV,D732
 Frascarolo,PV,D771
 Galliavola,PV,D873
 Gambarana,PV,D892
-Gambol√≤,PV,D901
+GambolÚ,PV,D901
 Garlasco,PV,D925
 Gerenzago,PV,D980
 Giussago,PV,E062
@@ -2291,7 +2288,7 @@ Montecalvo Versiggia,PV,F449
 Montescano,PV,F638
 Montesegale,PV,F644
 Monticelli Pavese,PV,F670
-Mont√π Beccaria,PV,F701
+Mont˘ Beccaria,PV,F701
 Mornico Losana,PV,F739
 Mortara,PV,F754
 Nicorvo,PV,F891
@@ -2352,7 +2349,7 @@ Torre de' Negri,PV,L262
 Torre d'Isola,PV,L269
 Torrevecchia Pia,PV,L285
 Torricella Verzate,PV,L292
-Travac√≤ Siccomario,PV,I236
+TravacÚ Siccomario,PV,I236
 Trivolzio,PV,L440
 Tromello,PV,L449
 Trovo,PV,L453
@@ -2378,7 +2375,7 @@ Zeccone,PV,M152
 Zeme,PV,M161
 Zenevredo,PV,M162
 Zerbo,PV,M166
-Zerbol√≤,PV,M167
+ZerbolÚ,PV,M167
 Zinasco,PV,M180
 Cornale e Bastida,PV,M338
 Corteolona e Genzone,PV,M372
@@ -2565,7 +2562,7 @@ Airuno,LC,A112
 Annone di Brianza,LC,A301
 Ballabio,LC,A594
 Barzago,LC,A683
-Barzan√≤,LC,A686
+BarzanÚ,LC,A686
 Barzio,LC,A687
 Bellano,LC,A745
 Bosisio Parini,LC,B081
@@ -2630,7 +2627,7 @@ Premana,LC,H028
 Primaluna,LC,H063
 Robbiate,LC,G223
 Rogeno,LC,H486
-Santa Maria Ho√®,LC,I243
+Santa Maria HoË,LC,I243
 Sirone,LC,I759
 Sirtori,LC,I761
 Sueglio,LC,I994
@@ -2639,9 +2636,8 @@ Taceno,LC,L022
 Valgreghentino,LC,L581
 Valmadrera,LC,L634
 Varenna,LC,L680
-Vendrogno,LC,L731
 Vercurago,LC,L751
-Vigan√≤,LC,L866
+ViganÚ,LC,L866
 Verderio,LC,M337
 La Valletta Brianza,LC,M348
 Valvarrone,LC,M395
@@ -2738,7 +2734,7 @@ Meda,MB,F078
 Mezzago,MB,F165
 Misinto,MB,F247
 Monza,MB,F704
-Muggi√≤,MB,F797
+MuggiÚ,MB,F797
 Nova Milanese,MB,F944
 Ornago,MB,G116
 Renate,MB,H233
@@ -2763,7 +2759,7 @@ Roncello,MB,H529
 Aldino/Aldein,BZ,A179
 Andriano/Andrian,BZ,A286
 Anterivo/Altrei,BZ,A306
-Appiano sulla strada del vino/Eppan an der Weinstra√üe,BZ,A332
+Appiano sulla strada del vino/Eppan an der Weinstraﬂe,BZ,A332
 Avelengo/Hafling,BZ,A507
 Badia/Abtei,BZ,A537
 Barbiano/Barbian,BZ,A635
@@ -2774,7 +2770,7 @@ Bressanone/Brixen,BZ,B160
 Bronzolo/Branzoll,BZ,B203
 Brunico/Bruneck,BZ,B220
 Caines/Kuens,BZ,B364
-Caldaro sulla strada del vino/Kaltern an der Weinstra√üe,BZ,B397
+Caldaro sulla strada del vino/Kaltern an der Weinstraﬂe,BZ,B397
 Campo di Trens/Freienfeld,BZ,B529
 Campo Tures/Sand in Taufers,BZ,B570
 Castelbello-Ciardes/Kastelbell-Tschars,BZ,C062
@@ -2783,16 +2779,16 @@ Cermes/Tscherms,BZ,A022
 Chienes/Kiens,BZ,C625
 Chiusa/Klausen,BZ,C652
 Cornedo all'Isarco/Karneid,BZ,B799
-Cortaccia sulla strada del vino/Kurtatsch an der Weinstra√üe,BZ,D048
-Cortina sulla strada del vino/Kurtinig an der Weinstra√üe,BZ,D075
+Cortaccia sulla strada del vino/Kurtatsch an der Weinstraﬂe,BZ,D048
+Cortina sulla strada del vino/Kurtinig an der Weinstraﬂe,BZ,D075
 Corvara in Badia/Corvara,BZ,D079
 Curon Venosta/Graun im Vinschgau,BZ,D222
 Dobbiaco/Toblach,BZ,D311
 Egna/Neumarkt,BZ,D392
 Falzes/Pfalzen,BZ,D484
-Fi√® allo Sciliar/V√∂ls am Schlern,BZ,D571
+FiË allo Sciliar/Vˆls am Schlern,BZ,D571
 Fortezza/Franzensfeste,BZ,D731
-Funes/Villn√∂√ü,BZ,D821
+Funes/Villnˆﬂ,BZ,D821
 Gais/Gais,BZ,D860
 Gargazzone/Gargazon,BZ,D923
 Glorenza/Glurns,BZ,E069
@@ -2803,16 +2799,16 @@ Laives/Leifers,BZ,E421
 Lana/Lana,BZ,E434
 Lasa/Laas,BZ,E457
 Lauregno/Laurein,BZ,E481
-Luson/L√ºsen,BZ,E764
-Magr√® sulla strada del vino/Margreid an der Weinstra√üe,BZ,E829
+Luson/L¸sen,BZ,E764
+MagrË sulla strada del vino/Margreid an der Weinstraﬂe,BZ,E829
 Malles Venosta/Mals,BZ,E862
 Marebbe/Enneberg,BZ,E938
 Marlengo/Marling,BZ,E959
 Martello/Martell,BZ,E981
-Meltina/M√∂lten,BZ,F118
+Meltina/Mˆlten,BZ,F118
 Merano/Meran,BZ,F132
 Monguelfo-Tesido/Welsberg-Taisten,BZ,F371
-Montagna/Montan,BZ,F392
+Montagna sulla Strada del Vino/Montan an der Weinstraﬂe,BZ,F392
 Moso in Passiria/Moos in Passeier,BZ,F766
 Nalles/Nals,BZ,F836
 Naturno/Naturns,BZ,F849
@@ -2833,9 +2829,9 @@ Racines/Ratschings,BZ,H152
 Rasun-Anterselva/Rasen-Antholz,BZ,H189
 Renon/Ritten,BZ,H236
 Rifiano/Riffian,BZ,H284
-Rio di Pusteria/M√ºhlbach,BZ,H299
+Rio di Pusteria/M¸hlbach,BZ,H299
 Rodengo/Rodeneck,BZ,H475
-Salorno/Salurn,BZ,H719
+Salorno sulla strada del vino/Salurn an der Weinstraﬂe,BZ,H719
 San Candido/Innichen,BZ,H786
 San Genesio Atesino/Jenesien,BZ,H858
 San Leonardo in Passiria/St. Leonhard in Passeier,BZ,H952
@@ -2843,11 +2839,11 @@ San Lorenzo di Sebato/St. Lorenzen,BZ,H956
 San Martino in Badia/St. Martin in Thurn,BZ,H988
 San Martino in Passiria/St. Martin in Passeier,BZ,H989
 San Pancrazio/St. Pankraz,BZ,I065
-Santa Cristina Valgardena/St. Christina in Gr√∂den,BZ,I173
+Santa Cristina Valgardena/St. Christina in Grˆden,BZ,I173
 Sarentino/Sarntal,BZ,I431
 Scena/Schenna,BZ,I519
-Selva dei Molini/M√ºhlwald,BZ,I593
-Selva di Val Gardena/Wolkenstein in Gr√∂den,BZ,I591
+Selva dei Molini/M¸hlwald,BZ,I593
+Selva di Val Gardena/Wolkenstein in Grˆden,BZ,I591
 Senales/Schnals,BZ,I604
 Sesto/Sexten,BZ,I687
 Silandro/Schlanders,BZ,I729
@@ -2855,12 +2851,12 @@ Sluderno/Schluderns,BZ,I771
 Stelvio/Stilfs,BZ,I948
 Terento/Terenten,BZ,L106
 Terlano/Terlan,BZ,L108
-Termeno sulla strada del vino/Tramin an der Weinstra√üe,BZ,L111
+Termeno sulla strada del vino/Tramin an der Weinstraﬂe,BZ,L111
 Tesimo/Tisens,BZ,L149
 Tires/Tiers,BZ,L176
 Tirolo/Tirol,BZ,L178
 Trodena nel parco naturale/Truden im Naturpark,BZ,L444
-Tubre/Taufers im M√ºnstertal,BZ,L455
+Tubre/Taufers im M¸nstertal,BZ,L455
 Ultimo/Ulten,BZ,L490
 Vadena/Pfatten,BZ,L527
 Valdaora/Olang,BZ,L552
@@ -2869,7 +2865,7 @@ Valle Aurina/Ahrntal,BZ,L595
 Valle di Casies/Gsies,BZ,L601
 Vandoies/Vintl,BZ,L660
 Varna/Vahrn,BZ,L687
-Verano/V√∂ran,BZ,L745
+Verano/Vˆran,BZ,L745
 Villabassa/Niederdorf,BZ,L915
 Villandro/Villanders,BZ,L971
 Vipiteno/Sterzing,BZ,M067
@@ -2882,7 +2878,7 @@ Aldeno,TN,A178
 Andalo,TN,A274
 Arco,TN,A372
 Avio,TN,A520
-Baselga di Pin√®,TN,A694
+Baselga di PinË,TN,A694
 Bedollo,TN,A730
 Besenello,TN,A821
 Bieno,TN,A863
@@ -2892,9 +2888,7 @@ Bondone,TN,A968
 Borgo Valsugana,TN,B006
 Brentonico,TN,B153
 Bresimo,TN,B158
-Brez,TN,B165
 Caderzone Terme,TN,B335
-Cagn√≤,TN,B360
 Calceranica al Lago,TN,B389
 Caldes,TN,B400
 Caldonazzo,TN,B404
@@ -2904,11 +2898,9 @@ Campodenno,TN,B525
 Canal San Bovo,TN,B577
 Canazei,TN,B579
 Capriana,TN,B697
-Carano,TN,B723
 Carisolo,TN,B783
 Carzano,TN,B856
 Castel Condino,TN,C183
-Castelfondo,TN,C103
 Castello-Molina di Fiemme,TN,C189
 Castello Tesino,TN,C194
 Castelnuovo,TN,C216
@@ -2922,20 +2914,16 @@ Cinte Tesino,TN,C712
 Cis,TN,C727
 Civezzano,TN,C756
 Cles,TN,C794
-Cloz,TN,C797
 Commezzadura,TN,C931
 Croviana,TN,D188
-Daiano,TN,D243
 Dambel,TN,D246
 Denno,TN,D273
 Drena,TN,D365
 Dro,TN,D371
-Faedo,TN,D457
 Fai della Paganella,TN,D468
-Fiav√®,TN,D565
+FiavË,TN,D565
 Fierozzo,TN,D573
 Folgaria,TN,D651
-Fondo,TN,D663
 Fornace,TN,D714
 Frassilongo,TN,D775
 Garniga Terme,TN,D928
@@ -2950,8 +2938,7 @@ Levico Terme,TN,E565
 Livo,TN,E624
 Lona-Lases,TN,E664
 Luserna,TN,E757
-Mal√©,TN,E850
-Malosco,TN,E866
+MalÈ,TN,E850
 Massimeno,TN,F045
 Mazzin,TN,F068
 Mezzana,TN,F168
@@ -2967,8 +2954,8 @@ Nomi,TN,F929
 Novaledo,TN,F947
 Ospedaletto,TN,G168
 Ossana,TN,G173
-Pal√π del Fersina,TN,G296
-Panchi√†,TN,G305
+Pal˘ del Fersina,TN,G296
+Panchi‡,TN,G305
 Ronzo-Chienis,TN,M303
 Peio,TN,G419
 Pellizzano,TN,G428
@@ -2979,16 +2966,14 @@ Pinzolo,TN,G681
 Pomarolo,TN,G808
 Predazzo,TN,H018
 Rabbi,TN,H146
-Rev√≤,TN,H254
 Riva del Garda,TN,H330
-Romallo,TN,H506
 Romeno,TN,H517
 Roncegno Terme,TN,H528
 Ronchi Valsugana,TN,H532
 Ronzone,TN,H552
-Rover√® della Luna,TN,H607
+RoverË della Luna,TN,H607
 Rovereto,TN,H612
-Ruffr√®-Mendola,TN,H634
+RuffrË-Mendola,TN,H634
 Rumo,TN,H639
 Sagron Mis,TN,H666
 Samone,TN,H754
@@ -3021,7 +3006,6 @@ Trambileno,TN,L322
 Trento,TN,L378
 Valfloriana,TN,L575
 Vallarsa,TN,L588
-Varena,TN,L678
 Vermiglio,TN,L769
 Vignola-Falesina,TN,L886
 Villa Lagarina,TN,L957
@@ -3041,7 +3025,7 @@ Borgo Chiese,TN,M352
 Borgo Lares,TN,M353
 Castel Ivano,TN,M354
 Cembra Lisignago,TN,M355
-Cont√†,TN,M356
+Cont‡,TN,M356
 Madruzzo,TN,M357
 Porte di Rendena,TN,M358
 Primiero San Martino di Castrozza,TN,M359
@@ -3049,8 +3033,11 @@ Sella Giudicarie,TN,M360
 Tre Ville,TN,M361
 Vallelaghi,TN,M362
 Ville d'Anaunia,TN,M363
-San Giovanni di Fassa-S√®n Jan,TN,M390
+San Giovanni di Fassa-SËn Jan,TN,M390
 Terre d'Adige,TN,M407
+Borgo d'Anaunia,TN,M429
+Novella,TN,M430
+Ville di Fiemme,TN,M431
 Affi,VR,A061
 Albaredo d'Adige,VR,A137
 Angiari,VR,A292
@@ -3081,8 +3068,8 @@ Cologna Veneta,VR,C890
 Colognola ai Colli,VR,C897
 Concamarise,VR,C943
 Costermano sul Garda,VR,D118
-Dolc√®,VR,D317
-Erb√®,VR,D419
+DolcË,VR,D317
+ErbË,VR,D419
 Erbezzo,VR,D420
 Ferrara di Monte Baldo,VR,D549
 Fumane,VR,D818
@@ -3106,18 +3093,18 @@ Negrar di Valpolicella,VR,F861
 Nogara,VR,F918
 Nogarole Rocca,VR,F921
 Oppeano,VR,G080
-Pal√π,VR,G297
+Pal˘,VR,G297
 Pastrengo,VR,G365
 Pescantina,VR,G481
 Peschiera del Garda,VR,G489
 Povegliano Veronese,VR,G945
 Pressana,VR,H048
 Rivoli Veronese,VR,H356
-Ronc√†,VR,H522
+Ronc‡,VR,H522
 Ronco all'Adige,VR,H540
 Roverchiara,VR,H606
-Roveredo di Gu√†,VR,H610
-Rover√® Veronese,VR,H608
+Roveredo di Gu‡,VR,H610
+RoverË Veronese,VR,H608
 Salizzole,VR,H714
 San Bonifacio,VR,H783
 San Giovanni Ilarione,VR,H916
@@ -3134,7 +3121,7 @@ Selva di Progno,VR,I594
 Soave,VR,I775
 Sommacampagna,VR,I821
 Sona,VR,I826
-Sorg√†,VR,I850
+Sorg‡,VR,I850
 Terrazzo,VR,L136
 Torri del Benaco,VR,L287
 Tregnago,VR,L364
@@ -3170,7 +3157,7 @@ Caltrano,VI,B433
 Calvene,VI,B441
 Camisano Vicentino,VI,B485
 Campiglia dei Berici,VI,B511
-Carr√®,VI,B835
+CarrË,VI,B835
 Cartigliano,VI,B844
 Cassola,VI,C037
 Castegnero,VI,C056
@@ -3226,7 +3213,7 @@ Quinto Vicentino,VI,H134
 Recoaro Terme,VI,H214
 Roana,VI,H361
 Romano d'Ezzelino,VI,H512
-Ros√†,VI,H556
+Ros‡,VI,H556
 Rossano Veneto,VI,H580
 Rotzo,VI,H594
 Salcedo,VI,F810
@@ -3254,7 +3241,7 @@ Velo d'Astico,VI,L723
 Vicenza,VI,L840
 Villaga,VI,L952
 Villaverla,VI,M032
-Zan√®,VI,M145
+ZanË,VI,M145
 Zermeghedo,VI,M170
 Zovencedo,VI,M194
 Zugliano,VI,M199
@@ -3266,7 +3253,7 @@ Lusiana Conco,VI,M427
 Agordo,BL,A083
 Alano di Piave,BL,A121
 Alleghe,BL,A206
-Arsi√®,BL,A443
+ArsiË,BL,A443
 Auronzo di Cadore,BL,A501
 Belluno,BL,A757
 Borca di Cadore,BL,A982
@@ -3299,7 +3286,7 @@ Ponte nelle Alpi,BL,B662
 Rivamonte Agordino,BL,H327
 Rocca Pietore,BL,H379
 San Gregorio nelle Alpi,BL,H938
-San Nicol√≤ di Comelico,BL,I063
+San NicolÚ di Comelico,BL,I063
 San Pietro di Cadore,BL,I088
 Santa Giustina,BL,I206
 San Tomaso Agordino,BL,I347
@@ -3318,7 +3305,7 @@ Valle di Cadore,BL,L590
 Vigo di Cadore,BL,L890
 Vodo Cadore,BL,M108
 Voltago Agordino,BL,M124
-Zopp√® di Cadore,BL,M189
+ZoppË di Cadore,BL,M189
 Quero Vas,BL,M332
 Longarone,BL,M342
 Alpago,BL,M375
@@ -3342,7 +3329,7 @@ Cessalto,TV,C580
 Chiarano,TV,C614
 Cimadolmo,TV,C689
 Cison di Valmarino,TV,C735
-Codogn√®,TV,C815
+CodognË,TV,C815
 Colle Umberto,TV,C848
 Conegliano,TV,C957
 Cordignano,TV,C992
@@ -3359,7 +3346,7 @@ Godega di Sant'Urbano,TV,E071
 Gorgo al Monticano,TV,E092
 Istrana,TV,E373
 Loria,TV,E692
-Mansu√®,TV,E893
+MansuË,TV,E893
 Mareno di Piave,TV,E940
 Maser,TV,F009
 Maserada sul Piave,TV,F012
@@ -3381,7 +3368,7 @@ Pederobba,TV,G408
 Pieve di Soligo,TV,G645
 Ponte di Piave,TV,G846
 Ponzano Veneto,TV,G875
-Portobuffol√®,TV,G909
+PortobuffolË,TV,G909
 Possagno,TV,G933
 Povegliano,TV,G944
 Preganziol,TV,H022
@@ -3434,7 +3421,7 @@ Eraclea,VE,D415
 Fiesso d'Artico,VE,D578
 Fossalta di Piave,VE,D740
 Fossalta di Portogruaro,VE,D741
-Foss√≤,VE,D748
+FossÚ,VE,D748
 Gruaro,VE,E215
 Jesolo,VE,C388
 Marcon,VE,E936
@@ -3450,11 +3437,11 @@ Portogruaro,VE,G914
 Pramaggiore,VE,G981
 Quarto d'Altino,VE,H117
 Salzano,VE,H735
-San Don√† di Piave,VE,H823
+San Don‡ di Piave,VE,H823
 San Michele al Tagliamento,VE,I040
 Santa Maria di Sala,VE,I242
 San Stino di Livenza,VE,I373
-Scorz√®,VE,I551
+ScorzË,VE,I551
 Spinea,VE,I908
 Stra,VE,I965
 Teglio Veneto,VE,L085
@@ -3466,7 +3453,7 @@ Abano Terme,PD,A001
 Agna,PD,A075
 Albignasego,PD,A161
 Anguillara Veneta,PD,A296
-Arqu√† Petrarca,PD,A434
+Arqu‡ Petrarca,PD,A434
 Arre,PD,A438
 Arzergrande,PD,A458
 Bagnoli di Sopra,PD,A568
@@ -3507,7 +3494,7 @@ Legnaro,PD,E515
 Limena,PD,E592
 Loreggia,PD,E684
 Lozzo Atestino,PD,E709
-Maser√† di Padova,PD,F011
+Maser‡ di Padova,PD,F011
 Masi,PD,F013
 Massanzago,PD,F033
 Megliadino San Vitale,PD,F092
@@ -3527,7 +3514,7 @@ Piove di Sacco,PD,G693
 Polverara,PD,G802
 Ponso,PD,G823
 Pontelongo,PD,G850
-Ponte San Nicol√≤,PD,G855
+Ponte San NicolÚ,PD,G855
 Pozzonovo,PD,G963
 Rovolon,PD,H622
 Rubano,PD,H625
@@ -3566,7 +3553,7 @@ Due Carrare,PD,M300
 Borgo Veneto,PD,M402
 Adria,RO,A059
 Ariano nel Polesine,RO,A400
-Arqu√† Polesine,RO,A435
+Arqu‡ Polesine,RO,A435
 Badia Polesine,RO,A539
 Bagnolo di Po,RO,A574
 Bergantino,RO,A795
@@ -3750,7 +3737,7 @@ Fiumicello Villa Vicentina,UD,M400
 Treppo Ligosullo,UD,M399
 Capriva del Friuli,GO,B712
 Cormons,GO,D014
-Doberd√≤ del Lago-Doberdob,GO,D312
+DoberdÚ del Lago-Doberdob,GO,D312
 Dolegna del Collio,GO,D321
 Farra d'Isonzo,GO,D504
 Fogliano Redipuglia,GO,D645
@@ -3766,14 +3753,14 @@ Romans d'Isonzo,GO,H514
 Ronchi dei Legionari,GO,H531
 Sagrado,GO,H665
 San Canzian d'Isonzo,GO,H787
-San Floriano del Collio-¬äteverjan,GO,H845
+San Floriano del Collio-äteverjan,GO,H845
 San Lorenzo Isontino,GO,H964
 San Pier d'Isonzo,GO,I082
 Savogna d'Isonzo-Sovodnje ob So?i,GO,I479
 Staranzano,GO,I939
 Turriaco,GO,L474
 Villesse,GO,M043
-Duino Aurisina-Devin Nabre¬ûina,TS,D383
+Duino Aurisina-Devin Nabreûina,TS,D383
 Monrupino-Repentabor,TS,F378
 Muggia,TS,F795
 San Dorligo della Valle-Dolina,TS,D324
@@ -3873,7 +3860,7 @@ Pigna,IM,G660
 Pompeiana,IM,G814
 Pontedassio,IM,G840
 Pornassio,IM,G890
-Prel√†,IM,H027
+Prel‡,IM,H027
 Ranzo,IM,H180
 Rezzo,IM,H257
 Riva Ligure,IM,H328
@@ -4021,7 +4008,7 @@ Santa Margherita Ligure,GE,I225
 Sant'Olcese,GE,I346
 Santo Stefano d'Aveto,GE,I368
 Savignone,GE,I475
-Serra Ricc√≤,GE,I640
+Serra RiccÚ,GE,I640
 Sestri Levante,GE,I693
 Sori,GE,I852
 Tiglieto,GE,L167
@@ -4053,7 +4040,7 @@ Monterosso al Mare,SP,F609
 Luni,SP,G143
 Pignone,SP,G664
 Portovenere,SP,G925
-Ricc√≤ del Golfo di Spezia,SP,H275
+RiccÚ del Golfo di Spezia,SP,H275
 Riomaggiore,SP,H304
 Rocchetta di Vara,SP,H461
 Santo Stefano di Magra,SP,I363
@@ -4344,7 +4331,7 @@ Cesena,FC,C573
 Cesenatico,FC,C574
 Civitella di Romagna,FC,C777
 Dovadola,FC,D357
-Forl√¨,FC,D704
+ForlÏ,FC,D704
 Forlimpopoli,FC,D705
 Galeata,FC,D867
 Gambettola,FC,D899
@@ -4391,6 +4378,8 @@ Sant'Agata Feltria,RN,I201
 Talamello,RN,L034
 Poggio Torriana,RN,M324
 Montescudo-Monte Colombo,RN,M368
+Montecopiolo,RN,F478
+Sassofeltrio,RN,I460
 Aulla,MS,A496
 Bagnone,MS,A576
 Carrara,MS,B832
@@ -4566,7 +4555,7 @@ Bucine,AR,B243
 Capolona,AR,B670
 Caprese Michelangelo,AR,B693
 Castel Focognano,AR,C102
-Castel San Niccol√≤,AR,C263
+Castel San NiccolÚ,AR,C263
 Castiglion Fibocchi,AR,C318
 Castiglion Fiorentino,AR,C319
 Cavriglia,AR,C407
@@ -4591,7 +4580,7 @@ Sestino,AR,I681
 Subbiano,AR,I991
 Talla,AR,L038
 Terranuova Bracciolini,AR,L123
-Castelfranco Piandisc√≤,AR,M322
+Castelfranco PiandiscÚ,AR,M322
 Pratovecchio Stia,AR,M329
 Laterina Pergine Valdarno,AR,M392
 Abbadia San Salvatore,SI,A006
@@ -4675,8 +4664,8 @@ Castel Ritaldi,PG,C252
 Castiglione del Lago,PG,C309
 Cerreto di Spoleto,PG,C527
 Citerna,PG,C742
-Citt√† della Pieve,PG,C744
-Citt√† di Castello,PG,C745
+Citt‡ della Pieve,PG,C744
+Citt‡ di Castello,PG,C745
 Collazzone,PG,C845
 Corciano,PG,C990
 Costacciaro,PG,D108
@@ -4782,8 +4771,6 @@ Mondavio,PU,F347
 Mondolfo,PU,F348
 Montecalvo in Foglia,PU,F450
 Monte Cerignone,PU,F467
-Monteciccardo,PU,F474
-Montecopiolo,PU,F478
 Montefelcino,PU,F497
 Monte Grimano Terme,PU,F524
 Montelabbate,PU,F533
@@ -4799,7 +4786,6 @@ San Costanzo,PU,H809
 San Lorenzo in Campo,PU,H958
 Sant'Angelo in Vado,PU,I287
 Sant'Ippolito,PU,I344
-Sassofeltrio,PU,I460
 Serra Sant'Abbondio,PU,I654
 Tavoleto,PU,L078
 Tavullia,PU,L081
@@ -5528,7 +5514,7 @@ Carpineto della Nora,PE,B827
 Castiglione a Casauria,PE,C308
 Catignano,PE,C354
 Cepagatti,PE,C474
-Citt√† Sant'Angelo,PE,C750
+Citt‡ Sant'Angelo,PE,C750
 Civitaquana,PE,C771
 Civitella Casanova,PE,C779
 Collecorvino,PE,C853
@@ -5770,7 +5756,7 @@ Civitanova del Sannio,IS,C769
 Colli a Volturno,IS,C878
 Conca Casale,IS,C941
 Filignano,IS,D595
-Forl√¨ del Sannio,IS,D703
+ForlÏ del Sannio,IS,D703
 Fornelli,IS,D715
 Frosolone,IS,D811
 Isernia,IS,E335
@@ -6074,7 +6060,7 @@ Vico Equense,NA,L845
 Villaricca,NA,G309
 Visciano,NA,M072
 Volla,NA,M115
-Santa Maria la Carit√†,NA,M273
+Santa Maria la Carit‡,NA,M273
 Trecase,NA,M280
 Massa di Somma,NA,M289
 Aiello del Sabato,AV,A101
@@ -6554,7 +6540,7 @@ Monteroni di Lecce,LE,F604
 Montesano Salentino,LE,F623
 Morciano di Leuca,LE,F716
 Muro Leccese,LE,F816
-Nard√≤,LE,F842
+NardÚ,LE,F842
 Neviano,LE,F881
 Nociglia,LE,F916
 Novoli,LE,F970
@@ -6562,7 +6548,7 @@ Ortelle,LE,G136
 Otranto,LE,G188
 Palmariggi,LE,G285
 Parabita,LE,G325
-Pat√π,LE,G378
+Pat˘,LE,G378
 Poggiardo,LE,G751
 Racale,LE,H147
 Ruffano,LE,H632
@@ -6575,7 +6561,7 @@ Sannicola,LE,I059
 San Pietro in Lama,LE,I115
 Santa Cesarea Terme,LE,I172
 Scorrano,LE,I549
-Secl√¨,LE,I559
+SeclÏ,LE,I559
 Sogliano Cavour,LE,I780
 Soleto,LE,I800
 Specchia,LE,I887
@@ -6809,7 +6795,7 @@ Longobardi,CS,E677
 Longobucco,CS,E678
 Lungro,CS,E745
 Luzzi,CS,E773
-Maier√†,CS,E835
+Maier‡,CS,E835
 Malito,CS,E859
 Malvito,CS,E872
 Mandatoriccio,CS,E878
@@ -6941,7 +6927,7 @@ Olivadi,CZ,G034
 Palermiti,CZ,G272
 Pentone,CZ,G439
 Petrizzi,CZ,G517
-Petron√†,CZ,G518
+Petron‡,CZ,G518
 Pianopoli,CZ,D546
 Platania,CZ,G734
 San Floro,CZ,H846
@@ -6964,7 +6950,7 @@ Soverato,CZ,I872
 Soveria Mannelli,CZ,I874
 Soveria Simeri,CZ,I875
 Squillace,CZ,I929
-Stalett√¨,CZ,I937
+StalettÏ,CZ,I937
 Taverna,CZ,L070
 Tiriolo,CZ,L177
 Torre di Ruggiero,CZ,L240
@@ -6996,7 +6982,7 @@ Cardeto,RC,B756
 Careri,RC,B766
 Casignana,RC,B966
 Caulonia,RC,C285
-Cimin√†,RC,C695
+Cimin‡,RC,C695
 Cinquefrondi,RC,C710
 Cittanova,RC,C747
 Condofuri,RC,C954
@@ -7018,7 +7004,7 @@ Mammola,RC,E873
 Marina di Gioiosa Ionica,RC,E956
 Maropati,RC,E968
 Martone,RC,E993
-Melicucc√†,RC,F105
+Melicucc‡,RC,F105
 Melicucco,RC,F106
 Melito di Porto Salvo,RC,F112
 Molochio,RC,F301
@@ -7030,7 +7016,7 @@ Palizzi,RC,G277
 Palmi,RC,G288
 Pazzano,RC,G394
 Placanica,RC,G729
-Plat√¨,RC,G735
+PlatÏ,RC,G735
 Polistena,RC,G791
 Portigliola,RC,G905
 Reggio di Calabria,RC,H224
@@ -7045,7 +7031,7 @@ San Giorgio Morgeto,RC,H889
 San Giovanni di Gerace,RC,H903
 San Lorenzo,RC,H959
 San Luca,RC,H970
-San Pietro di Carid√†,RC,I102
+San Pietro di Carid‡,RC,I102
 San Procopio,RC,I132
 San Roberto,RC,I139
 Santa Cristina d'Aspromonte,RC,I176
@@ -7074,8 +7060,8 @@ Carfizzi,KR,B771
 Casabona,KR,B857
 Castelsilano,KR,B968
 Cerenzia,KR,C501
-Cir√≤,KR,C725
-Cir√≤ Marina,KR,C726
+CirÚ,KR,C725
+CirÚ Marina,KR,C726
 Cotronei,KR,D123
 Crotone,KR,D122
 Crucoli,KR,D189
@@ -7101,7 +7087,7 @@ Briatico,VV,B169
 Brognaturo,VV,B197
 Capistrano,VV,B655
 Cessaniti,VV,C581
-Das√†,VV,D253
+Das‡,VV,D253
 Dinami,VV,D303
 Drapia,VV,D364
 Fabrizia,VV,D453
@@ -7169,6 +7155,7 @@ Trapani,TP,L331
 Valderice,TP,G319
 Vita,TP,M081
 Petrosino,TP,M281
+Misiliscemi,TP,M432
 Alia,PA,A195
 Alimena,PA,A202
 Aliminusa,PA,A203
@@ -7194,8 +7181,8 @@ Castelbuono,PA,C067
 Casteldaccia,PA,C074
 Castellana Sicula,PA,C135
 Castronovo di Sicilia,PA,C344
-Cefal√† Diana,PA,C420
-Cefal√π,PA,C421
+Cefal‡ Diana,PA,C420
+Cefal˘,PA,C421
 Cerda,PA,C496
 Chiusa Sclafani,PA,C654
 Ciminna,PA,C696
@@ -7252,11 +7239,11 @@ Villafrati,PA,L951
 Scillato,PA,I538
 Blufi,PA,M268
 Alcara li Fusi,ME,A177
-Al√¨,ME,A194
-Al√¨ Terme,ME,A201
+AlÏ,ME,A194
+AlÏ Terme,ME,A201
 Antillo,ME,A313
 Barcellona Pozzo di Gotto,ME,A638
-Basic√≤,ME,A698
+BasicÚ,ME,A698
 Brolo,ME,B198
 Capizzi,ME,B660
 Capo d'Orlando,ME,B666
@@ -7267,16 +7254,16 @@ Castel di Lucio,ME,C094
 Castell'Umberto,ME,C051
 Castelmola,ME,C210
 Castroreale,ME,C347
-Cesar√≤,ME,C568
-Condr√≤,ME,C956
+CesarÚ,ME,C568
+CondrÚ,ME,C956
 Falcone,ME,D474
 Ficarra,ME,D569
 Fiumedinisi,ME,D622
 Floresta,ME,D635
 Fondachelli-Fantina,ME,D661
-Forza d'Agr√≤,ME,D733
+Forza d'AgrÚ,ME,D733
 Francavilla di Sicilia,ME,D765
-Frazzan√≤,ME,D793
+FrazzanÚ,ME,D793
 Furci Siculo,ME,D824
 Furnari,ME,D825
 Gaggi,ME,D844
@@ -7285,7 +7272,7 @@ Gallodoro,ME,D885
 Giardini-Naxos,ME,E014
 Gioiosa Marea,ME,E043
 Graniti,ME,E142
-Gualtieri Sicamin√≤,ME,E233
+Gualtieri SicaminÚ,ME,E233
 Itala,ME,E374
 Leni,ME,E523
 Letojanni,ME,E555
@@ -7296,8 +7283,8 @@ Longi,ME,E674
 Malfa,ME,E855
 Malvagna,ME,E869
 Mandanici,ME,E876
-Mazzarr√† Sant'Andrea,ME,F066
-Mer√¨,ME,F147
+Mazzarr‡ Sant'Andrea,ME,F066
+MerÏ,ME,F147
 Messina,ME,F158
 Milazzo,ME,F206
 Militello Rosmarino,ME,F210
@@ -7325,7 +7312,7 @@ Roccafiorita,ME,H405
 Roccalumera,ME,H418
 Roccavaldina,ME,H380
 Roccella Valdemone,ME,H455
-Rod√¨ Milici,ME,H479
+RodÏ Milici,ME,H479
 Rometta,ME,H519
 San Filippo del Mela,ME,H842
 San Fratello,ME,H850
@@ -7369,7 +7356,7 @@ Caltabellotta,AG,B427
 Camastra,AG,B460
 Cammarata,AG,B486
 Campobello di Licata,AG,B520
-Canicatt√¨,AG,B602
+CanicattÏ,AG,B602
 Casteltermini,AG,C275
 Castrofilippo,AG,C341
 Cattolica Eraclea,AG,C356
@@ -7476,7 +7463,7 @@ Misterbianco,CT,F250
 Motta Sant'Anastasia,CT,F781
 Nicolosi,CT,F890
 Palagonia,CT,G253
-Patern√≤,CT,G371
+PaternÚ,CT,G371
 Pedara,CT,G402
 Piedimonte Etneo,CT,G597
 Raddusa,CT,H154
@@ -7536,7 +7523,7 @@ Sortino,SR,I864
 Portopalo di Capo Passero,SR,M257
 Priolo Gargallo,SR,M279
 Aggius,SS,A069
-Al√† dei Sardi,SS,A115
+Al‡ dei Sardi,SS,A115
 Alghero,SS,A192
 Anela,SS,A287
 Ardara,SS,A379
@@ -7551,7 +7538,7 @@ Bonorva,SS,A978
 Bortigiadas,SS,B063
 Borutta,SS,B064
 Bottidda,SS,B094
-Buddus√≤,SS,B246
+BuddusÚ,SS,B246
 Bultei,SS,B264
 Bulzi,SS,B265
 Burgos,SS,B276
@@ -7578,7 +7565,7 @@ Monteleone Rocca Doria,SS,F542
 Monti,SS,F667
 Mores,SS,F721
 Muros,SS,F818
-Nughedu San Nicol√≤,SS,F975
+Nughedu San NicolÚ,SS,F975
 Nule,SS,F976
 Nulvi,SS,F977
 Olbia,SS,G015
@@ -7608,7 +7595,7 @@ Tempio Pausania,SS,L093
 Thiesi,SS,L158
 Tissi,SS,L180
 Torralba,SS,L235
-Trinit√† d'Agultu e Vignola,SS,L428
+Trinit‡ d'Agultu e Vignola,SS,L428
 Tula,SS,L464
 Uri,SS,L503
 Usini,SS,L509
@@ -7633,7 +7620,7 @@ Atzara,NU,A492
 Austis,NU,A503
 Bari Sardo,NU,A663
 Baunei,NU,A722
-Belv√¨,NU,A776
+BelvÏ,NU,A776
 Birori,NU,A880
 Bitti,NU,A895
 Bolotana,NU,A948
@@ -7646,7 +7633,7 @@ Elini,NU,D395
 Fonni,NU,D665
 Gadoni,NU,D842
 Gairo,NU,D859
-Galtell√¨,NU,D888
+GaltellÏ,NU,D888
 Gavoi,NU,D947
 Girasole,NU,E049
 Ilbono,NU,E283
@@ -7656,7 +7643,7 @@ Lanusei,NU,E441
 Lei,NU,E517
 Loceri,NU,E644
 Loculi,NU,E646
-Lod√®,NU,E647
+LodË,NU,E647
 Lotzorai,NU,E700
 Lula,NU,E736
 Macomer,NU,E788
@@ -7667,7 +7654,7 @@ Nuoro,NU,F979
 Oliena,NU,G031
 Ollolai,NU,G044
 Olzai,NU,G058
-Onan√¨,NU,G064
+OnanÏ,NU,G064
 Onifai,NU,G070
 Oniferi,NU,G071
 Orani,NU,G084
@@ -7692,8 +7679,8 @@ Tertenia,NU,L140
 Teti,NU,L153
 Tiana,NU,L160
 Tonara,NU,L202
-Torp√®,NU,L231
-Tortol√¨,NU,A355
+TorpË,NU,L231
+TortolÏ,NU,A355
 Triei,NU,L423
 Ulassai,NU,L489
 Urzulei,NU,L506
@@ -7731,7 +7718,7 @@ Baradili,OR,A614
 Baratili San Pietro,OR,A621
 Baressa,OR,A655
 Bauladu,OR,A721
-Bidon√¨,OR,A856
+BidonÏ,OR,A856
 Bonarcado,OR,A960
 Boroneddu,OR,B055
 Busachi,OR,B281
@@ -7740,7 +7727,7 @@ Cuglieri,OR,D200
 Fordongianus,OR,D695
 Ghilarza,OR,E004
 Gonnoscodina,OR,E087
-Gonnosn√≤,OR,D585
+GonnosnÚ,OR,D585
 Gonnostramatza,OR,E088
 Marrubiu,OR,E972
 Masullas,OR,F050
@@ -7763,7 +7750,7 @@ Pompu,OR,G817
 Riola Sardo,OR,H301
 Ruinas,OR,F271
 Samugheo,OR,H756
-San Nicol√≤ d'Arcidano,OR,A368
+San NicolÚ d'Arcidano,OR,A368
 Santa Giusta,OR,I205
 Villa Sant'Antonio,OR,I298
 Santu Lussurgiu,OR,I374
@@ -7785,7 +7772,7 @@ Tadasuni,OR,L023
 Terralba,OR,L122
 Tramatza,OR,L321
 Tresnuraghes,OR,L393
-Ul√† Tirso,OR,L488
+Ul‡ Tirso,OR,L488
 Uras,OR,L496
 Usellus,OR,L508
 Villanova Truschedu,OR,L991
@@ -7795,7 +7782,7 @@ Zeddiani,OR,M153
 Zerfaliu,OR,M168
 Siapiccia,OR,I721
 Curcuris,OR,D214
-Sodd√¨,OR,I778
+SoddÏ,OR,I778
 Bosa,OR,B068
 Flussio,OR,D640
 Laconi,OR,E400
@@ -7868,7 +7855,7 @@ Samatzai,SU,H739
 San Basilio,SU,H766
 San Gavino Monreale,SU,H856
 San Giovanni Suergiu,SU,G287
-San Nicol√≤ Gerrei,SU,G383
+San NicolÚ Gerrei,SU,G383
 San Sperate,SU,I166
 San Vito,SU,I402
 Sanluri,SU,H974
@@ -7879,7 +7866,7 @@ Sant'Antioco,SU,I294
 Sardara,SU,I428
 Segariu,SU,I570
 Selegas,SU,I582
-Senorb√¨,SU,I615
+SenorbÏ,SU,I615
 Serdiana,SU,I624
 Serramanna,SU,I647
 Serrenti,SU,I667
