@@ -192,7 +192,7 @@ Piscina,TO,G705
 Piverone,TO,G719
 Poirino,TO,G777
 Pomaretto,TO,G805
-Pont-Canavese,TO,G826
+Pont Canavese,TO,G826
 Porte,TO,G900
 Pragelato,TO,G973
 Prali,TO,G978
@@ -739,13 +739,13 @@ Bruno,AT,B221
 Bubbio,AT,B236
 Buttigliera d'Asti,AT,B306
 Calamandrana,AT,B376
-Calliano,AT,B418
+Calliano Monferrato,AT,B418
 Calosso,AT,B425
 Camerano Casasco,AT,B469
 Canelli,AT,B594
 Cantarana,AT,B633
 Capriglio,AT,B707
-Casorzo,AT,B991
+Casorzo Monferrato,AT,B991
 Cassinasco,AT,C022
 Castagnole delle Lanze,AT,C049
 Castagnole Monferrato,AT,C047
@@ -780,7 +780,7 @@ Dusino San Michele,AT,D388
 Ferrere,AT,D554
 Fontanile,AT,D678
 Frinco,AT,D802
-Grana,AT,E134
+Grana Monferrato,AT,E134
 Grazzano Badoglio,AT,E159
 Incisa Scapaccino,AT,E295
 Isola d'Asti,AT,E338
@@ -801,7 +801,7 @@ Montafia,AT,F390
 Montaldo Scarampi,AT,F409
 Montechiaro d'Asti,AT,F468
 Montegrosso d'Asti,AT,F527
-Montemagno,AT,F556
+Montemagno Monferrato,AT,F556
 Moransengo,AT,F709
 Nizza Monferrato,AT,F902
 Olmo Gentile,AT,G048
@@ -832,7 +832,6 @@ Settime,AT,I698
 Soglio,AT,I781
 Tigliole,AT,L168
 Tonco,AT,L203
-Tonengo,AT,L204
 Vaglio Serra,AT,L531
 Valfenera,AT,L574
 Vesime,AT,L807
@@ -844,6 +843,7 @@ Villanova d'Asti,AT,L984
 Villa San Secondo,AT,M019
 Vinchio,AT,M058
 Montiglio Monferrato,AT,M302
+Moransengo-Tonengo,AT,M434
 Acqui Terme,AL,A052
 Albera Ligure,AL,A146
 Alessandria,AL,A182
@@ -886,7 +886,7 @@ Casalnoceto,AL,B902
 Casasco,AL,B941
 Cassine,AL,C027
 Cassinelle,AL,C030
-Castellania,AL,C137
+Castellania Coppi,AL,C137
 Castellar Guidobono,AL,C142
 Castellazzo Bormida,AL,C148
 Castelletto d'Erro,AL,C156
@@ -1391,6 +1391,7 @@ Vizzola Ticino,VA,M101
 Sangiano,VA,H872
 Maccagno con Pino e Veddasca,VA,M339
 Cadrezzate con Osmate,VA,M425
+Bardello con Malgesso e Bregano,VA,M433
 Albavilla,CO,A143
 Albese con Cassano,CO,A153
 Albiolo,CO,A164
@@ -1539,6 +1540,7 @@ Tremezzina,CO,M341
 Alta Valle Intelvi,CO,M383
 Centro Valle Intelvi,CO,M394
 Solbiate con Cagno,CO,M412
+Uggiate con Ronago,CO,M435
 Albaredo per San Marco,SO,A135
 Albosaggia,SO,A172
 Andalo Valtellino,SO,A273
@@ -2148,7 +2150,7 @@ Preseglie,BS,H043
 Prevalle,BS,H055
 Provaglio d'Iseo,BS,H078
 Provaglio Val Sabbia,BS,H077
-Puegnago sul Garda,BS,H086
+Puegnago del Garda,BS,H086
 Quinzano d'Oglio,BS,H140
 Remedello,BS,H230
 Rezzato,BS,H256
@@ -2221,7 +2223,7 @@ Breme,PV,B142
 Bressana Bottarone,PV,B159
 Broni,PV,B201
 Calvignano,PV,B447
-Campospinoso,PV,B567
+Campospinoso Albaredo,PV,B567
 Candia Lomellina,PV,B587
 Canneto Pavese,PV,B613
 Carbonara al Ticino,PV,B741
@@ -2812,7 +2814,7 @@ Martello/Martell,BZ,E981
 Meltina/Mölten,BZ,F118
 Merano/Meran,BZ,F132
 Monguelfo-Tesido/Welsberg-Taisten,BZ,F371
-Montagna/Montan,BZ,F392
+Montagna sulla strada del vino/Montan an der Weinstraße,BZ,F392
 Moso in Passiria/Moos in Passeier,BZ,F766
 Nalles/Nals,BZ,F836
 Naturno/Naturns,BZ,F849
@@ -2835,7 +2837,7 @@ Renon/Ritten,BZ,H236
 Rifiano/Riffian,BZ,H284
 Rio di Pusteria/Mühlbach,BZ,H299
 Rodengo/Rodeneck,BZ,H475
-Salorno/Salurn,BZ,H719
+Salorno sulla strada del vino/Salurn an der Weinstraße,BZ,H719
 San Candido/Innichen,BZ,H786
 San Genesio Atesino/Jenesien,BZ,H858
 San Leonardo in Passiria/St. Leonhard in Passeier,BZ,H952
@@ -3051,6 +3053,9 @@ Vallelaghi,TN,M362
 Ville d'Anaunia,TN,M363
 San Giovanni di Fassa-Sèn Jan,TN,M390
 Terre d'Adige,TN,M407
+Borgo d'Anaunia,TN,M429
+Novella,TN,M430
+Ville di Fiemme,TN,M431
 Affi,VR,A061
 Albaredo d'Adige,VR,A137
 Angiari,VR,A292
@@ -3240,7 +3245,6 @@ Schiavon,VI,I527
 Schio,VI,I531
 Solagna,VI,I783
 Sossano,VI,I867
-Sovizzo,VI,I879
 Tezze sul Brenta,VI,L156
 Thiene,VI,L157
 Tonezza del Cimone,VI,D717
@@ -3263,6 +3267,7 @@ Barbarano Mossano,VI,M401
 Valbrenta,VI,M423
 Colceresa,VI,M426
 Lusiana Conco,VI,M427
+Sovizzo,VI,M436
 Agordo,BL,A083
 Alano di Piave,BL,A121
 Alleghe,BL,A206
@@ -3324,6 +3329,7 @@ Longarone,BL,M342
 Alpago,BL,M375
 Val di Zoldo,BL,M374
 Borgo Valbelluna,BL,M421
+Setteville,BL,M437
 Altivole,TV,A237
 Arcade,TV,A360
 Asolo,TV,A471
@@ -3564,6 +3570,7 @@ Villanova di Camposampiero,PD,L979
 Vo',PD,M103
 Due Carrare,PD,M300
 Borgo Veneto,PD,M402
+Santa Caterina d'Este,PD,M438
 Adria,RO,A059
 Ariano nel Polesine,RO,A400
 Arquà Polesine,RO,A435
@@ -3766,14 +3773,14 @@ Romans d'Isonzo,GO,H514
 Ronchi dei Legionari,GO,H531
 Sagrado,GO,H665
 San Canzian d'Isonzo,GO,H787
-San Floriano del Collio-teverjan,GO,H845
+San Floriano del Collio-Števerjan,GO,H845
 San Lorenzo Isontino,GO,H964
 San Pier d'Isonzo,GO,I082
 Savogna d'Isonzo-Sovodnje ob So?i,GO,I479
 Staranzano,GO,I939
 Turriaco,GO,L474
 Villesse,GO,M043
-Duino Aurisina-Devin Nabreina,TS,D383
+Duino Aurisina-Devin Nabrežina,TS,D383
 Monrupino-Repentabor,TS,F378
 Muggia,TS,F795
 San Dorligo della Valle-Dolina,TS,D324
@@ -4391,6 +4398,8 @@ Sant'Agata Feltria,RN,I201
 Talamello,RN,L034
 Poggio Torriana,RN,M324
 Montescudo-Monte Colombo,RN,M368
+Montecopiolo,RN,F478
+Sassofeltrio,RN,I460
 Aulla,MS,A496
 Bagnone,MS,A576
 Carrara,MS,B832
@@ -5549,7 +5558,7 @@ Pescosansonesco,PE,G499
 Pianella,PE,G555
 Picciano,PE,G589
 Pietranico,PE,G621
-Popoli,PE,G878
+Popoli Terme,PE,G878
 Roccamorice,PE,H425
 Rosciano,PE,H562
 Salle,PE,H715
@@ -7169,6 +7178,7 @@ Trapani,TP,L331
 Valderice,TP,G319
 Vita,TP,M081
 Petrosino,TP,M281
+Misiliscemi,TP,M432
 Alia,PA,A195
 Alimena,PA,A202
 Aliminusa,PA,A203
